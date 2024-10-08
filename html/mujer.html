@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Band</title>
+    <link rel="stylesheet" href="../styles.css"> <!-- Vincular el CSS -->
+
+    <!--icono de identificacion del sitio-->
+    <link rel="icon" href="../iconos/favicon.ico" type="image/x-icon"> 
+    <!-- Iconos para dispositivos Apple -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../iconos/apple-touch-icon.png">
+    
+    <!-- Iconos para Android -->
+    <link rel="icon" type="image/png" sizes="192x192" href="../iconos/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../iconos/android-chrome-512x512.png">
+    <!-- Manifesto para PWA -->
+    <link rel="manifest" href="../manifest.json">
+
+    
+</head>
+<body>
+<div class="wrapper"> 
+
+
+     <!-- BARRA DE NAVEGACION(nav)-------------------------------------------------------------------------->
+    <header>
+        <nav class="navheader">
+             <a href="../index.html" class="logo"> <!-- Enlace con el logo -->
+                 <img src="../iconos/logo.webp" alt="Logo de la Marca" />
+             </a>
+
+             <ul class="navbar"> <!-- una lista desordenada ul, con clase barra de navegacion y enlases relativos-->
+                 <li><a href="../index.html">Home</a></li>
+                 <li><a href="mujer.html" style="background-color: #575757;">Mujer</a></li>
+                 <li><a href="hombre.html">Hombre</a></li>
+                 <li><a href="carrito.html">Carrito</a></li>
+                 <li><a href="registrarse.html">Registrarse</a></li>
+             </ul>
+             <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> <!-- Icono de menú para móviles -->
+
+        </nav> 
+
+         <!--Este script es para el icono del menu para celulares-->
+        <script> 
+            function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+         }
+        </script>
+
+    </header>
+    <!--Fin de barra de navegacion--------------------------------------------------------------------->
+
+
+ <div class="content">
+
+    <!--CATEGORIAS, BARRA DE NAV--------------------------------------------------------------->
+    <nav>
+        <ul class="navcategorias"> <!-- una lista desordenada ul, con clase barra de navegacion y enlases relativos-->
+            <li><a href="#" style=" color:black; text-decoration: underline">Conjuntos</a></li>
+            <li><a href="#">Remeras</a></li>
+            <li><a href="#" >Buzos</a></li>
+            <li><a href="#">Vestidos</a></li>
+            <li><a href="#">Pantalón</a></li>
+            <li><a href="#">Accesorios</a></li>
+        </ul>
+    </nav>
+    <div class="hr"><hr></div>
+    <!--fin de las categorias--------------------------------------------------------------->
+
+
+
+ <!--CATALOGO DE ROPA----------------------------------------------------------------------------------->
+  
+    <!--<section> Define una sección en el documento. Y id crea un identificador para 
+    la seccion, que despues puedo usar para llegar a esta desde otra secciones con un link interno-->
+     <div class="container"> 
+     <!-- un contenedor con un ancho del 80% del contenedor padre (pantalla) y lo centra 
+     horizontalmente usando margin: auto.-->
+         <main class="products">
+
+             <div class="product">
+                 <img src="../assets/conjuntos/gfh.jpg" alt="Producto 1"/>
+                 <h2>Producto 1</h2>
+                 <p class="price">$29.99</p>
+                 <a href="#" class="btn">Agregar al carrito</a>
+             </div>
+
+             <div class="product">
+                 <img src="../assets/conjuntos/juyj.jpg" alt="Producto 2"/>
+                 <h2>Producto 2</h2>
+                 <p class="price">$39.99</p>
+                 <a href="#" class="btn">Agregar al carrito</a>
+             </div>
+
+             <div class="product">
+                 <img src="../assets/conjuntos/descarga.jpg" alt="Producto 3">
+                 <h2>Producto 3</h2>
+                 <p class="price">$39.99</p>
+                 <a href="#" class="btn">Agregar al carrito</a>
+             </div>
+
+             <div class="product">
+                <img src="../assets/conjuntos/dws.jpg" alt="Producto 4">
+                <h2>Producto 4</h2>
+                <p class="price">$39.99</p>
+                <a href="#" class="btn">Agregar al carrito</a>
+            </div>
+
+            <div class="product">
+                <img src="../assets/conjuntos/fre.jpg" alt="Producto 5">
+                <h2>Producto 5</h2>
+                <p class="price">$39.99</p>
+                <a href="#" class="btn">Agregar al carrito</a>
+            </div>
+            <div class="product">
+                <img src="../assets/conjuntos/deaf.jpg" alt="Producto 6">
+                <h2>Producto 6</h2>
+                <p class="price">$39.99</p>
+                <a href="#" class="btn">Agregar al carrito</a>
+            </div>
+
+
+         </main>
+     </div>
+ 
+
+<!--FIN DEL CATALOGO------------------------------------------------------------------------------------>
+
+ </div>
+ </div>
+
+<!--PIE DE PAGINA----------------------------------------------------------------------------------->
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Catálogo de Dark band. Todos los derechos reservados.</p>
+        <!--enlase absoluto-->
+        <p>Contacto:<a href="https://marcossavid14@gmail.com" class="contac-link"> marcossavid14@gmail.com</a></p>
+    </div>
+</footer>
+<!--fin de pie de pagina----------------------------------------------------------------------------->
+
+
+
+
+
+
+    
+    
+</body>
+
+<script src="main.js"></script>
+</html>

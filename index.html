@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkBand</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Vincular el CSS -->
+
+    <!--icono de identificacion del sitio-->
+    <link rel="icon" href="iconos/favicon.ico" type="image/x-icon"> 
+    <!-- Iconos para dispositivos Apple -->
+    <link rel="apple-touch-icon" sizes="180x180" href="iconos/apple-touch-icon.png">
+    
+    <!-- Iconos para Android -->
+    <link rel="icon" type="image/png" sizes="192x192" href="iconos/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="iconos/android-chrome-512x512.png">
+    <!-- Manifesto para PWA -->
+    <link rel="manifest" href="manifest.json">
+
+</head>
+
+
+
+<body>
+
+    <div class="wrapper">    
+
+   
+     <header>
+         <!-- BARRA DE NAVEGACION(nav)-------------------------------------------------------------------------->
+        <nav class="navheader">
+             <a href="index.html" class="logo"> <!-- Enlace con el logo -->
+                 <img src="iconos/logo.webp" alt="Logo de la Marca" />
+             </a>
+
+             <ul class="navbar"> <!-- una lista desordenada ul, con clase barra de navegacion y enlases relativos-->
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="html/mujer.html">Mujer</a></li>
+                 <li><a href="html/hombre.html">Hombre</a></li>
+                 <li><a href="html/carrito.html" id="cart-link">Carrito<span id="cart-notification"></span></a></li> <!--El elemento <span> en HTML es un contenedor en línea que se utiliza para agrupar texto o elementos dentro de una línea sin introducir cambios visuales significativos por sí mismo. Es similar a un <div>, pero mientras que <div> es un elemento de bloque (ocupa toda la anchura disponible), <span> es un elemento en línea (solo ocupa el espacio necesario para su contenido).-->
+                 <li><a href="html/registrarse.html">Registrarse</a></li>
+             </ul>
+             <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> <!-- Icono de menú para móviles -->
+
+        </nav> 
+
+         <!--Este script es para el icono del menu para celulares-->
+        <script> 
+            function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+         }
+        </script>
+
+     </header>
+     <!--Fin de barra de navegacion--------------------------------------------------------------------->
+
+
+
+
+
+         <div class="content">
+             <!--BANNER DE ENCABEZADO------------------------------------------------------------------------------->
+    
+            <div class="banner"> 
+              <h1>Darkband</h1>
+              <p>Black vibes</p>
+            </div>
+    
+         <!--fin del banner--------------------------------------------------------------------------------->
+
+
+
+         <!--CATALOGO DE ROPA----------------------------------------------------------------------------------->
+         
+         <div class="container"> 
+            <!-- un contenedor con un ancho del 80% del contenedor padre (pantalla) y lo centra 
+            horizontalmente usando margin: auto.-->
+                <main class="products" id="catalogo">
+            <!--El <main> debe contener el contenido principal de la página, es decir, la información que es específica y relevante para el propósito de esa página en particular.
+            Único por Página: Solo debe haber un <main> por página, ya que este representa el contenido central y principal. No debe incluirse dentro de otro contenido de nivel de bloque como <header>, <footer>, <nav>, o <aside>.
+            Accesibilidad: Mejora la accesibilidad al permitir a las tecnologías asistivas (como lectores de pantalla) saltar directamente al contenido principal de la página, ignorando elementos repetitivos como menús de navegación y encabezados.-->
+                    <div class="product">
+                        <img src="assets/vestido.webp" alt="Producto 1"/>
+                        <h2>Producto 1</h2>
+                        <p class="price">$29.99</p>
+                        <a href="#" class="btn">Agregar al carrito</a>
+                    </div>
+
+                    <div class="product">
+                        <img src="assets/pantalon.webp" alt="Producto 2"/>
+                        <h2>Producto 2</h2>
+                        <p class="price">$39.99</p>
+                         <a href="#" class="btn">Agregar al carrito</a>
+                    </div>
+                    <div class="product">
+                         <img src="assets/remera.webp" alt="Producto 2"/>
+                         <h2>Producto 2</h2>
+                         <p class="price">$39.99</p>
+                        <a href="#" class="btn">Agregar al carrito</a>
+                    </div>
+     
+                </main>
+            </div>
+       
+           
+            
+
+<!--FIN DEL CATALOGO------------------------------------------------------------------------------------>
+
+
+
+
+<!-- VIDEO---------------------------------------------------------------------------------------------->
+<section class="video-contenedor">
+    <div class="video">
+        <video autoplay muted loop class="video-video" >
+             <source src="assets/video.mp4" type="video/mp4"> <!--source se utiliza dentro de los elementos <video> y <audio> 
+                para especificar múltiples fuentes de medios. Permite que el navegador seleccione la fuente más 
+                adecuada para reproducir el contenido-->
+             Tu navegador no soporta el elemento de video.
+        </video>
+        <div class="video-content">
+             <p>Marca que vales</p>
+        </div>
+    </div> 
+</section>
+<!--fin video---------------------------------------------------------------------------------------->
+
+
+
+
+</div></div>
+
+<!--PIE DE PAGINA----------------------------------------------------------------------------------->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Catálogo de Dark band. Todos los derechos reservados.</p>
+            <!--enlase absoluto-->
+            <p>Contacto:<a href="https://marcossavid14@gmail.com" class="contac-link"> marcossavid14@gmail.com</a></p>
+        </div>
+    </footer>
+<!--fin de pie de pagina----------------------------------------------------------------------------->
+
+    
+
+
+</body>
+
+<script src="main.js"></script>
+</html>

@@ -1,0 +1,490 @@
+/* Reset del CSS. configuracion universal de la pagina */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Este valor asegura que el ancho y alto de los elementos incluyan el relleno y el borde, lo cual*/
+}
+
+/* Configuración del body */
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+}
+
+/* Contenido principal */
+.content {
+    flex: 1; /* Hace que el contenido ocupe todo el espacio disponible */
+}
+
+
+
+
+
+/* ETILOS DE BARRA DE NAVEGACION----------------------------------------------------------------------------------
+Estilos para la barra de navegación Se estiliza la lista desordenada para que no tenga puntos de lista, 
+se ajusta su margen y relleno, y se le asigna un color de fondo.*/
+.navheader {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido */
+    justify-content: space-between; /* Espacio entre el logo y la lista de navegación */
+    background: #333;
+    padding: 10px 20px;
+    
+}
+
+/* Estilos del logo */
+.logo img {
+    height: 50px; /* Ajusta la altura del logo según lo necesites */
+    width: auto; /* Mantiene la proporción del logo */
+}
+
+
+
+/*Estilos para la barra de navegación Se estiliza la lista desordenada para que no tenga puntos de lista, 
+se ajusta su margen y relleno, y se le asigna un color de fondo.*/
+.navbar {
+    list-style-type: none; /* Quita los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Color de fondo de la barra */
+    overflow: hidden; /* Asegura que el contenido se ajuste */
+    text-align: center; /* Centra los elementos de la lista */
+    
+}
+
+.navbar li {
+    display: inline; /* Muestra los elementos de la lista en línea. Se muestra cada elemento de la lista (<li>) 
+    en línea, para que los elementos del menú se alineen horizontalmente. */
+}
+
+.navbar li a {
+    /*Los enlaces dentro de los elementos de la lista se estilizan para que sean más grandes, centrados, y se 
+    les da un color de texto blanco y un relleno adecuado para crear un área de clic más amplia.*/
+    display: inline-block;
+    color: white; /* Color del texto */
+    text-align: center;
+    padding: 14px 20px; /* Espaciado interno */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    font-size: 18px;
+}
+
+.navbar li a:hover {
+    /*Se añade un efecto hover para que cuando el usuario pase el cursor sobre un enlace, el fondo cambie 
+    de color, proporcionando retroalimentación visual.*/
+    background-color: #575757; /* Color de fondo cuando se pasa el mouse */
+    color: #fff; /* Color del texto cuando se pasa el mouse */
+}
+/*-------------------------------------------------------------------------------------------------*/
+
+
+/* ¿¡¡MENU PARA MOVILES!!.----------------------------------------------------------------------------
+Presiona F12 para abrir las herramientas de desarrollo (o Ctrl+Shift+I en Windows/Linux o Cmd+Opt+I en macOS).
+Haz clic en el ícono de "Toggle device toolbar" (parece un teléfono móvil y una tableta) o presiona Ctrl+Shift+M para activar el modo de simulación de dispositivo.
+Selecciona diferentes dispositivos para ver cómo se verá tu sitio en ellos.
+/////////////////////////////////////////////////////////// 
+Estilos para el ícono de menú en móviles 
+Este es el ícono del menú que aparece en dispositivos móviles. Es invisible en pantallas más grandes 
+(display: none;), pero visible en pantallas pequeñas gracias al @media query.*/
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    padding: 14px 20px;
+    cursor: pointer;
+}
+
+/* Media query para pantallas pequeñas.  */
+@media screen and (max-width: 600px) { 
+    /*Este @media query aplica estilos cuando la pantalla es de 600 
+    píxeles de ancho o menos. Puedes ajustar este valor según tus necesidades.*/
+    .navbar {
+        
+        display: none; /* Oculta la barra de navegación por defecto en móviles */
+        flex-direction: column; /* Muestra los elementos en una columna */
+        width: 100%;
+        text-align: right;
+        
+        
+    }
+
+     .logo img {
+        display:none; /*Con esto hago desaparecer el logo en mobil*/
+     }
+
+    .navbar.active {
+        /*Cuando el ícono del menú es clicado, se activa la clase .active en la lista .navbar, 
+        lo que hace que se muestre como un menú desplegable vertical.*/
+        display: flex;
+    }
+
+    .navbar li {
+        display: block;
+        width: 100%;
+    }
+
+    .navbar li a {
+        display: block;
+        padding: 14px 20px;
+        text-align: left;
+    }
+
+    .menu-icon {
+        display: block; /* Muestra el icono solo en pantallas pequeñas */
+        background-color: #333;
+        
+    }
+}
+ /*FIN MENU PARA MOVILES. 
+ En pantallas pequeñas, los elementos de la barra de navegación se 
+ apilan verticalmente (flex-direction: column;), y el botón del menú permite mostrar y ocultar los elementos 
+ del menú.-----------------------------------------------------------------------------------------*/
+
+
+ /*BANNER-----------------------------------------------------------------------------------------*/
+
+.banner {
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    height: 600px; /* Altura del banner */
+    background-image: url("assets/mujerjoven.webp"); /* La imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el área */
+    background-position: center; /* Centra la imagen en el banner */
+    display: flex; /* Activa Flexbox para este contenedor */
+    flex-direction: column; /* Alinea los elementos hijos (h1 y p) en columna */
+    align-items: center; /* Centra horizontalmente los elementos */
+    justify-content: center; /* Centra verticalmente los elementos */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto dentro de cada elemento */
+    font-size: 3rem; /* El tamaño de la letra*/
+    
+}
+/* Ajuste para pantallas más pequeñas mobile*/
+@media screen and (max-width: 768px) {
+    .banner {
+        height: 400px;
+        font-size: 1rem;
+    }
+}
+
+.banner h1 {
+    margin: 0; /* Elimina el margen del h1 para mejor control del espaciado */
+}
+
+.banner p {
+    margin: 0; /* Elimina el margen del párrafo */
+    margin-top: 10px; /* Añade un pequeño margen superior para separación */
+    font-size: 1.5rem; /* Ajusta el tamaño del texto del párrafo */
+}
+/*fin banner--*/
+
+
+/*BARRA DE CATEGORIAS----------------------------------------------------------*/
+.navcategorias {
+    display: flex;
+    margin: 32px;
+    list-style-type: none;
+    justify-content: center; 
+    
+}
+.navcategorias a {
+    text-decoration: none;
+    margin-right: 16px;
+    color:#333;
+    
+}
+.navcategorias a:hover{
+    color:black;
+    text-decoration: underline;
+}
+@media (max-width: 600px) {
+    
+    .navcategorias{
+        flex-direction: column; /* Muestra los elementos en una columna */
+        
+        text-align: left;
+    }
+    .navcategorias a {
+        color:#333;
+        line-height: 1.6;  
+    }
+   
+}
+/*FIN CATEGORIAS*/
+
+
+
+
+/*CATALOGO DE ROPA-------------------------------------------------------------*/
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}/*: Define un contenedor con un ancho del 80% del contenedor padre (pantalla) y lo centra 
+horizontalmente usando margin: auto.*/
+
+
+/* Estilos del main */
+.products {
+    display: flex; /* Habilita Flexbox */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias filas si es necesario */
+    gap: 50px; /* Espacio entre los productos */
+    padding: 32px 0;
+   
+} /*Añade un relleno vertical para separar la sección de productos del contenido alrededor.*/
+
+.product {/*lo que esta dentro de cada cuadro de productos*/
+    flex: 1 1 calc(25% - 20px); /* Ajusta el ancho del producto, considerando el espacio entre elementos */
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    background: #f9f9f9;
+   
+    box-sizing: border-box; /* Incluye el padding y el borde en el cálculo del ancho */
+} /* Aplica un borde gris claro, relleno interno, margen, y centra el texto. 
+También añade un fondo gris claro y bordes redondeados.*/
+
+.product img { 
+    width: 100%;
+    max-width: 300px;
+    height: 400px;
+    object-fit: cover; /* Recorta la imagen para que se ajuste al contenedor manteniendo las proporciones */
+    
+}
+
+.product h2 { /*El texto principal del producto*/
+    font-size: 1.5rem;
+}
+
+.product p.price {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.product .btn {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px; /*define el espaciado interno de un elemento, es decir, el espacio entre el contenido del elemento y su borde.*/
+    text-decoration: none;
+    
+    display: inline-block; /*Los elementos con display: inline-block se comportan como elementos en línea (es decir, se alinean uno al lado del otro en la misma línea, como palabras en una oración), pero también pueden tener dimensiones (ancho y alto) y margen/padding como si fueran elementos de bloque.*/
+}
+
+.product .btn:hover {
+    background: #555;
+}
+
+#cart-link { /* puntito del carrito. El símbolo # en CSS se utiliza para seleccionar un elemento HTML por su id. En este caso, #cart-link selecciona el elemento que tiene el atributo id="cart-link". */
+    position: relative; /* Este valor establece que el elemento cart-link será un contenedor de referencia para cualquier elemento hijo que esté posicionado de manera absoluta (absolute). */
+    display: inline-block; /* Este valor indica que el elemento cart-link se comportará como un elemento en línea (como un enlace o texto), pero aún puede tener dimensiones específicas (ancho y alto). Es decir, se mantiene en línea con otros elementos, pero se comporta como un bloque en términos de diseño. */
+}
+
+#cart-notification { /* puntito del carrito */
+    position: absolute; /* Posiciona el 'cart-notification' en relación al elemento padre con posición relativa (en este caso, 'cart-link'). */
+    top: 5px; /* Mueve el 'cart-notification' 5px hacia abajo desde la parte superior del 'cart-link'. */
+    right: 5px; /* Mueve el 'cart-notification' 5px hacia la izquierda desde el borde derecho del 'cart-link'. */
+    width: 10px; /* Establece un ancho de 10px para el 'cart-notification'. */
+    height: 10px; /* Establece una altura de 10px para el 'cart-notification', haciendo que sea un círculo perfecto cuando se combine con 'border-radius'. */
+    background-color: rgb(255, 255, 255); /* Asigna un color de fondo blanco (rgb(255, 255, 255)) al 'cart-notification'. */
+    border-radius: 50%; /* Redondea los bordes del 'cart-notification' al 50%, transformándolo en un círculo. */
+    display: none; /* Oculta el 'cart-notification' por defecto. Se puede mostrar dinámicamente cuando se añade un producto al carrito. */
+}
+
+/* Consultas de medios para adaptabilidad */
+@media (max-width: 1200px) {
+    .product {
+        flex: 1 1 calc(33.333% - 20px); /* 3 productos por fila */
+    }
+}
+
+@media (max-width: 900px) {
+    .product {
+        flex: 1 1 calc(50% - 20px); /* 2 productos por fila */
+    }
+}
+
+@media (max-width: 600px) {
+    .product {
+        flex: 1 1 100%; /* 1 producto por fila */
+    }
+}
+/* fin catalogo---------------------------------------------------------------------------------------------*/
+
+
+
+/*VIDEO-----------------------------------------------------------------------------------------*/
+
+.video {
+    position: relative; /* Necesario para posicionar el contenido sobre el video */
+    width: 80%; /* Ocupa todo el ancho de la pantalla */
+    height: 400px; /* Altura del video */
+    margin: auto; /* Centra el contenedor horizontalmente */
+    overflow: hidden; /* Oculta cualquier desbordamiento del video */
+    
+}
+
+/* Contenedor externo para manejar el flujo del diseño */
+.video-contenedor {
+    position: relative; /* Necesario para posicionar el contenedor relativo al flujo del diseño */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+    margin: 20px auto; /* Agrega un margen de 20px en la parte superior e inferior y centra el contenedor horizontalmente */
+    margin-bottom: 40px;
+    padding: 10 10px; /*  Agrega un padding de 10px en los lados para un mejor ajuste en pantallas pequeñas */
+}
+
+.video-video {
+    position: absolute; /* Posiciona el video absolutamente */
+    top: 0;
+    left: 0;
+    width: 100%; /* Hace que el video cubra todo el ancho del banner */
+    height: 100%; /* Hace que el video cubra toda la altura del banner */
+    object-fit: cover; /* Asegura que el video cubra todo el área sin deformarse */
+    z-index: -1; /* Coloca el video detrás del contenido */
+}
+
+.video-content {
+    position: relative; /* Asegura que el contenido esté por encima del video */
+    display: flex; /* Activa Flexbox para centrar el contenido */
+    flex-direction: column; /* Alinea los elementos hijos (h1 y p) en columna */
+    align-items: center; /* Centra horizontalmente los elementos */
+    justify-content: center; /* Centra verticalmente los elementos */
+    height: 100%; /* Asegura que el contenido esté centrado verticalmente */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto dentro de cada elemento */
+    font-size: 3rem; /* Tamaño de la letra */
+}
+/*fin del video---------------------------------------------------------------------------------*/
+
+
+/*linea---------------------------------------------------------------------------------------*/
+hr {
+    width: 80%;
+    border: 0; /* Elimina el borde por defecto */
+    height: 1px; /* Altura de la línea */
+    background-color: #aaaaaa; /* Color de la línea */
+    margin:auto;
+}
+/*fin de linea--------------------------------------------------------------------------------*/
+
+
+
+/*REGISTRO----------------------------------------------------------------------------------*/
+
+.registro {
+    background-image: url("../assets/degradado.jpg"); /* Gris claro */
+    border: 1px solid #ddd;
+    padding: 48px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    width: 50%; /* Ancho del contenedor */
+    margin: 64px auto; /* Centrar el contenedor */
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    /* Centra horizontalmente el contenido */
+    
+}
+
+.check {
+    
+    display:flex; 
+    margin: 0; /* Elimina márgenes adicionales del checkbox */
+    padding: 0; /* Elimina cualquier relleno */
+    
+}
+    
+
+  
+
+form fieldset input {
+     width: 94%;
+     margin: auto;
+     border-color: beige;
+     
+}
+.boton-enviar{
+    background-color: #333;
+    color:#f9f9f9;
+    margin-top: 48px;
+    padding: 10px 20px; 
+    border: none; /*sin los bordes*/
+    cursor: pointer;/*aparece la manito*/
+    
+    
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .registro {
+        width: 90%; /* Ajustar ancho en pantallas más pequeñas */
+        padding: 32px; /* Reducir el espaciado interno */
+    }
+
+    .boton-enviar {
+        margin-top: 24px; /* Reducir margen superior */
+        padding: 10px 16px; /* Ajustar el padding para botones más pequeños */
+    }
+
+    form fieldset input {
+        width: 90%; /* Asegurar que el input ocupe todo el ancho del contenedor */
+    }
+}
+
+@media (max-width: 480px) {
+    .registro {
+        width: 90%; /* Ocupa todo el ancho en pantallas muy pequeñas */
+        padding: 16px; /* Menor padding para pantallas pequeñas */
+        border-radius: 4px; /* Menos curvatura en los bordes */
+    }
+
+    .boton-enviar {
+        margin-top: 16px;
+        padding: 8px 12px; /* Botón más compacto */
+    }
+
+    form fieldset input {
+        width: 90%; /* Input de ancho completo */
+    }
+}
+
+/*Fin del registro---------------------------------------------------------------------*/
+
+/* Estilos del footer ---------------------------------------------------------------------*/
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0; /* Espaciado interno */
+     /* Fija el footer en la parte inferior de la ventana */
+    bottom: 0; /* Ubica el contenedor en la parte inferior */
+    left: 0; /* Alinea el contenedor a la izquierda */
+    right: 0; /* Alinea el contenedor a la derecha */
+ 
+    
+}
+
+/* Estilo para el enlace en el pie de página */
+footer a.contac-link {
+    text-decoration: underline; /*elimina el subrayado*/
+    color: #fff
+}
+footer a.contac-link:hover {
+    text-decoration: underline; /*elimina el subrayado*/
+    color: #4705fc
+}
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Band</title>
+    <link rel="stylesheet" href="../styles.css"> <!-- Vincular el CSS -->
+
+    <!--icono de identificacion del sitio-->
+    <link rel="icon" href="../iconos/favicon.ico" type="image/x-icon"> 
+    <!-- Iconos para dispositivos Apple -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../iconos/apple-touch-icon.png">
+    
+    <!-- Iconos para Android -->
+    <link rel="icon" type="image/png" sizes="192x192" href="../iconos/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../iconos/android-chrome-512x512.png">
+    <!-- Manifesto para PWA -->
+    <link rel="manifest" href="../manifest.json">
+
+</head>
+<body>
+
+<div class="wrapper">    
+
+    <!-- BARRA DE NAVEGACION(nav)-------------------------------------------------------------------------->
+    <header>
+        <nav class="navheader">
+             <a href="../index.html" class="logo"> <!-- Enlace con el logo -->
+                 <img src="../iconos/logo.webp" alt="Logo de la Marca" />
+             </a>
+
+             <ul class="navbar"> <!-- una lista desordenada ul, con clase barra de navegacion y enlases relativos-->
+                 <li><a href="../index.html">Home</a></li>
+                 <li><a href="mujer.html">Mujer</a></li>
+                 <li><a href="hombre.html">Hombre</a></li>
+                 <li><a href="carrito.html"style="background-color: #575757;">Carrito</a></li>
+                 <li><a href="registrarse.html">Registrarse</a></li>
+             </ul>
+             <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> <!-- Icono de menú para móviles -->
+
+        </nav> 
+
+         <!--Este script es para el icono del menu para celulares-->
+        <script> 
+            function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+         }
+        </script>
+
+    </header>
+    <!--Fin de barra de navegacion--------------------------------------------------------------------->
+    
+     <div class="content">
+
+
+
+
+        
+     </div>
+
+</div>
+    
+
+ <!--PIE DE PAGINA----------------------------------------------------------------------------------->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Catálogo de Dark band. Todos los derechos reservados.</p>
+            <!--enlase absoluto-->
+            <p>Contacto:<a href="https://marcossavid14@gmail.com" class="contac-link"> marcossavid14@gmail.com</a></p>
+        </div>
+    </footer>
+  <!--fin de pie de pagina----------------------------------------------------------------------------->
+
+    
+
+</body>
+<script src="main.js"></script>
+</html>
