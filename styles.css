@@ -90,6 +90,10 @@ se ajusta su margen y relleno, y se le asigna un color de fondo.*/
 /*-------------------------------------------------------------------------------------------------*/
 
 
+
+
+
+
 /* ¿¡¡MENU PARA MOVILES!!.----------------------------------------------------------------------------
 Presiona F12 para abrir las herramientas de desarrollo (o Ctrl+Shift+I en Windows/Linux o Cmd+Opt+I en macOS).
 Haz clic en el ícono de "Toggle device toolbar" (parece un teléfono móvil y una tableta) o presiona Ctrl+Shift+M para activar el modo de simulación de dispositivo.
@@ -153,6 +157,12 @@ Este es el ícono del menú que aparece en dispositivos móviles. Es invisible e
  del menú.-----------------------------------------------------------------------------------------*/
 
 
+
+
+
+
+
+
  /*BANNER-----------------------------------------------------------------------------------------*/
 
 .banner {
@@ -190,6 +200,11 @@ Este es el ícono del menú que aparece en dispositivos móviles. Es invisible e
 /*fin banner--*/
 
 
+
+
+
+
+
 /*BARRA DE CATEGORIAS----------------------------------------------------------*/
 .navcategorias {
     display: flex;
@@ -222,6 +237,10 @@ Este es el ícono del menú que aparece en dispositivos móviles. Es invisible e
    
 }
 /*FIN CATEGORIAS*/
+
+
+
+
 
 
 
@@ -265,6 +284,7 @@ También añade un fondo gris claro y bordes redondeados.*/
 
 .product h2 { /*El texto principal del producto*/
     font-size: 1.5rem;
+    margin: 10px 0;
 }
 
 .product p.price {
@@ -324,6 +344,11 @@ También añade un fondo gris claro y bordes redondeados.*/
 
 
 
+
+
+
+
+
 /*VIDEO-----------------------------------------------------------------------------------------*/
 
 .video {
@@ -369,6 +394,10 @@ También añade un fondo gris claro y bordes redondeados.*/
 /*fin del video---------------------------------------------------------------------------------*/
 
 
+
+
+
+
 /*linea---------------------------------------------------------------------------------------*/
 hr {
     width: 80%;
@@ -379,6 +408,18 @@ hr {
 }
 /*fin de linea--------------------------------------------------------------------------------*/
 
+
+
+/*REGISTRO-------------------------------------------------*/
+.btn-global {
+    background-color: #333!important;
+    border-color: #333!important;
+    margin: 10px 0;
+}
+.btn-global:hover{
+    background-color: #555 !important;
+    border-color: #555 !important;
+}
 
 
 

@@ -55,41 +55,55 @@
             </header>
          <!--Fin de barra de navegacion--------------------------------------------------------------------->
 
-         <div class="content" style="background-color: #c4c4c4;">
+
+
+
+
+
+         <div class="content" style="background-color: #d3d3d3;">
              
              <!--REGISTRO------------------------------------------------------------------------------------>
  
              <div class="container mt-5">
-                 <h2 class="text-center">Formulario de Registro</h2>
-                 <form>
-                      <!-- Campo de Nombre -->
-                     <div class="mb-3">
-                         <label for="nombre" class="form-label">Nombre</label>
-                         <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
-                      </div>
-            
-                     <!-- Campo de Email -->
-                     <div class="mb-3">
-                         <label for="email" class="form-label">Correo Electrónico</label>
-                         <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+                 <div class="row justify-content-center">
+                     <!--resposive, ocupa la mitad en largo, y completo en mobile-->  
+                     <div class="col-12 col-md-8 col-lg-6"> 
+                         <h2 class="text-center">Formulario de Registro</h2>
+                         <form>
+                            <br>
+                            <div class="mb-3"> <!--margin-bottom 3-->
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+                            </div>
+                    
+                            <!-- Campo de Email -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+                            </div>
+                    
+                            <!-- Campo de Teléfono -->
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Teléfono de Contacto</label>
+                                <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu teléfono" required>
+                            </div>
+                    
+                            <!-- Checkbox de Suscripción -->
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="boletin">
+                                <label class="form-check-label" for="boletin">
+                                Suscribirse al boletín informativo
+                                </label>
+                            </div>
+                    
+                            <!-- Botón de Envío -->
+                            <div class="d-grid ">
+                                <button type="submit" class="btn btn-primary btn-block btn-global" >Registrarse</button>
+                            </div>
+                         </form>
                      </div>
-            
-                     <!-- Campo de Teléfono -->
-                     <div class="mb-3">
-                         <label for="telefono" class="form-label">Teléfono de Contacto</label>
-                         <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu teléfono" required>
-                     </div>
-            
-                     <!-- Checkbox de Suscripción -->
-                     <div class="form-check mb-3">
-                         <input class="form-check-input" type="checkbox" value="" id="boletin">
-                         <label class="form-check-label" for="boletin">  Suscribirse al boletín informativo </label>
-                     </div>
-            
-                     <!-- Botón de Envío -->
-                     <button type="submit" class="btn btn-primary">Registrarse</button>
-                 </form>
-              </div>
+                 </div>
+             </div>
             
 
              <!--fin del registro------------------------------------------------------------------------------->
