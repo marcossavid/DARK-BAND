@@ -33,132 +33,58 @@ body {
 
 
 
-/* ETILOS DE BARRA DE NAVEGACION----------------------------------------------------------------------------------
-Estilos para la barra de navegación Se estiliza la lista desordenada para que no tenga puntos de lista, 
-se ajusta su margen y relleno, y se le asigna un color de fondo.*/
-.navheader {
-    display: flex;
-    align-items: center; /* Alinea verticalmente el contenido */
-    justify-content: space-between; /* Espacio entre el logo y la lista de navegación */
-    background: #333;
-    padding: 10px 20px;
-    
+/* ETILOS DE BARRA DE NAVEGACION----------------------------------------------------------------------------------*/
+
+.navbar-custom {
+    background-color: #333; /* Color de fondo */
 }
-
-/* Estilos del logo */
-.logo img {
-    height: 50px; /* Ajusta la altura del logo según lo necesites */
-    width: auto; /* Mantiene la proporción del logo */
-}
-
-
-
-/*Estilos para la barra de navegación Se estiliza la lista desordenada para que no tenga puntos de lista, 
-se ajusta su margen y relleno, y se le asigna un color de fondo.*/
-.navbar {
-    list-style-type: none; /* Quita los puntos de la lista */
-    margin: 0;
-    padding: 0;
-    background-color: #333; /* Color de fondo de la barra */
-    overflow: hidden; /* Asegura que el contenido se ajuste */
-    text-align: center; /* Centra los elementos de la lista */
-    
-}
-
-.navbar li {
-    display: inline; /* Muestra los elementos de la lista en línea. Se muestra cada elemento de la lista (<li>) 
-    en línea, para que los elementos del menú se alineen horizontalmente. */
-}
-
-.navbar li a {
-    /*Los enlaces dentro de los elementos de la lista se estilizan para que sean más grandes, centrados, y se 
-    les da un color de texto blanco y un relleno adecuado para crear un área de clic más amplia.*/
-    display: inline-block;
+.navbar-custom .nav-link {
     color: white; /* Color del texto */
-    text-align: center;
-    padding: 14px 20px; /* Espaciado interno */
-    text-decoration: none; /* Quita el subrayado de los enlaces */
-    font-size: 18px;
+    padding: 24px 20px; /* Espaciado */
+}
+.navbar-custom .nav-link:hover {
+    background-color: #575757; /* Color en hover */
+    color: white; /* Color del texto en hover */
+}
+.navbar-toggler {
+    border: none !important; /* Elimina el borde del botón */
+    outline: none !important; /* Elimina cualquier borde de enfoque */
 }
 
-.navbar li a:hover {
-    /*Se añade un efecto hover para que cuando el usuario pase el cursor sobre un enlace, el fondo cambie 
-    de color, proporcionando retroalimentación visual.*/
-    background-color: #575757; /* Color de fondo cuando se pasa el mouse */
-    color: #fff; /* Color del texto cuando se pasa el mouse */
+/* Personalizar el icono del botón hamburguesa */
+.navbar-toggler-icon {
+    background-image: none !important; /* Elimina el icono predeterminado de Bootstrap */
+    position: relative !important;
+    width: 30px !important; /* Ajusta el tamaño del icono */
+    height: 2px !important; /* Ajusta el grosor de las líneas */
+    background-color: white; /* Color de las líneas blancas */
 }
-/*-------------------------------------------------------------------------------------------------*/
-
-
-
-
-
-
-/* ¿¡¡MENU PARA MOVILES!!.----------------------------------------------------------------------------
-Presiona F12 para abrir las herramientas de desarrollo (o Ctrl+Shift+I en Windows/Linux o Cmd+Opt+I en macOS).
-Haz clic en el ícono de "Toggle device toolbar" (parece un teléfono móvil y una tableta) o presiona Ctrl+Shift+M para activar el modo de simulación de dispositivo.
-Selecciona diferentes dispositivos para ver cómo se verá tu sitio en ellos.
-/////////////////////////////////////////////////////////// 
-Estilos para el ícono de menú en móviles 
-Este es el ícono del menú que aparece en dispositivos móviles. Es invisible en pantallas más grandes 
-(display: none;), pero visible en pantallas pequeñas gracias al @media query.*/
-.menu-icon {
-    display: none;
-    font-size: 30px;
-    color: white;
-    padding: 14px 20px;
-    cursor: pointer;
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+    content: ''; 
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white; /* Color de las líneas blancas */
+    left: 0;
 }
 
-/* Media query para pantallas pequeñas.  */
-@media screen and (max-width: 600px) { 
-    /*Este @media query aplica estilos cuando la pantalla es de 600 
-    píxeles de ancho o menos. Puedes ajustar este valor según tus necesidades.*/
-    .navbar {
-        
-        display: none; /* Oculta la barra de navegación por defecto en móviles */
-        flex-direction: column; /* Muestra los elementos en una columna */
-        width: 100%;
-        text-align: right;
-        
-        
-    }
-
-     .logo img {
-        display:none; /*Con esto hago desaparecer el logo en mobil*/
-     }
-
-    .navbar.active {
-        /*Cuando el ícono del menú es clicado, se activa la clase .active en la lista .navbar, 
-        lo que hace que se muestre como un menú desplegable vertical.*/
-        display: flex;
-    }
-
-    .navbar li {
-        display: block;
-        width: 100%;
-    }
-
-    .navbar li a {
-        display: block;
-        padding: 14px 20px;
-        text-align: left;
-    }
-
-    .menu-icon {
-        display: block; /* Muestra el icono solo en pantallas pequeñas */
-        background-color: #333;
-        
-    }
+/* Línea superior */
+.navbar-toggler-icon::before {
+    top: -8px; /* Espaciado entre las líneas */
+    /*El pseudo-elemento ::before creará la barra superior del icono hamburguesa.
+    El pseudo-elemento ::after creará la barra inferior del icono hamburguesa.*/
 }
- /*FIN MENU PARA MOVILES. 
- En pantallas pequeñas, los elementos de la barra de navegación se 
- apilan verticalmente (flex-direction: column;), y el botón del menú permite mostrar y ocultar los elementos 
- del menú.-----------------------------------------------------------------------------------------*/
 
-
-
-
+/* Línea inferior */
+.navbar-toggler-icon::after {
+    top: 8px; /* Espaciado entre las líneas */
+}
+/* Eliminar el borde del botón hamburguesa cuando se hace clic */
+.navbar-toggler:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
 
 
 

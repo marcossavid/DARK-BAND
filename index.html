@@ -29,32 +29,45 @@
 
    
      <header>
-         <!-- BARRA DE NAVEGACION(nav)-------------------------------------------------------------------------->
-        <nav class="navheader">
-             <a href="index.html" class="logo"> <!-- Enlace con el logo -->
-                 <img src="iconos/logo.webp" alt="Logo de la Marca" />
-             </a>
+        <nav class="navbar navbar-expand-lg navbar-custom">
 
-             <ul class="navbar"> <!-- una lista desordenada ul, con clase barra de navegacion y enlases relativos-->
-                 <li><a href="index.html">Home</a></li>
-                 <li><a href="html/mujer.html">Mujer</a></li>
-                 <li><a href="html/hombre.html">Hombre</a></li>
-                 <li><a href="html/carrito.html" id="cart-link">Carrito<span id="cart-notification"></span></a></li> <!--El elemento <span> en HTML es un contenedor en línea que se utiliza para agrupar texto o elementos dentro de una línea sin introducir cambios visuales significativos por sí mismo. Es similar a un <div>, pero mientras que <div> es un elemento de bloque (ocupa toda la anchura disponible), <span> es un elemento en línea (solo ocupa el espacio necesario para su contenido).-->
-                 <li><a href="html/registrarse.html">Registrarse</a></li>
-             </ul>
-             <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> <!-- Icono de menú para móviles -->
+            <div class="container-fluid">
 
-        </nav> 
+                <!-- Logo -->
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../iconos/logo.webp" alt="Logo de la Marca" height="50">
+                </a>
 
-         <!--Este script es para el icono del menu para celulares-->
-        <script> 
-            function toggleMenu() {
-            const navbar = document.querySelector('.navbar');
-            navbar.classList.toggle('active');
-         }
-        </script>
+                <!-- Botón para el menú móvil -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Enlaces de navegación -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/mujer.html">Mujer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/hombre.html">Hombre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/carrito.html">Carrito</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/registrarse.html" >Registrarse</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
      </header>
+     
      <!--Fin de barra de navegacion--------------------------------------------------------------------->
 
 

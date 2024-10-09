@@ -22,37 +22,54 @@
 
 </head>
 
+
+
+
 <body>
     
      <div class="wrapper" > 
 
             <!-- BARRA DE NAVEGACION(nav)-------------------------------------------------------------------------->
          <header>
-             <nav class="navheader">
-                 <a href="../index.html" class="logo"> <!-- Enlace con el logo -->
-                     <img src="../iconos/logo.webp" alt="Logo de la Marca" />
-                  </a>
 
-                 <ul class="navbar"> <!-- una lista desordenada ul, con clase barra de navegacion y enlases relativos-->
-                     <li><a href="../index.html">Home</a></li>
-                     <li><a href="mujer.html">Mujer</a></li>
-                     <li><a href="hombre.html">Hombre</a></li>
-                      <li><a href="carrito.html">Carrito</a></li>
-                      <li ><a href="registrarse.html" style="background-color: #575757;">Registrarse </a></li>
-                 </ul>
-                 <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> <!-- Icono de menú para móviles -->
+            <nav class="navbar navbar-expand-lg navbar-custom">
 
-             </nav> 
-
-             <!--Este script es para el icono del menu para celulares-->
-             <script> 
-                 function toggleMenu() {
-                 const navbar = document.querySelector('.navbar');
-                  navbar.classList.toggle('active');
-                 }
-              </script>
-
-            </header>
+                <div class="container-fluid">
+    
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../iconos/logo.webp" alt="Logo de la Marca" height="50">
+                    </a>
+    
+                    <!-- Botón para el menú móvil -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <!-- Enlaces de navegación -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mujer.html">Mujer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="hombre.html">Hombre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="carrito.html">Carrito</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="registrarse.html" >Registrarse</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    
+         </header>
          <!--Fin de barra de navegacion--------------------------------------------------------------------->
 
 
