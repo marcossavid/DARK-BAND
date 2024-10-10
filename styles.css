@@ -110,19 +110,24 @@ body {
 @media screen and (max-width: 768px) {
     .banner {
         height: 400px;
-        font-size: 1rem;
+        font-size: 3rem;
     }
+   
 }
 
 .banner h1 {
     margin: 0; /* Elimina el margen del h1 para mejor control del espaciado */
+    font-size:3rem;
+    
 }
 
 .banner p {
     margin: 0; /* Elimina el margen del párrafo */
     margin-top: 10px; /* Añade un pequeño margen superior para separación */
-    font-size: 1.2rem; /* Ajusta el tamaño del texto del párrafo */
+    font-size: 2rem; /* Ajusta el tamaño del texto del párrafo */
 }
+
+
 /*fin banner--*/
 
 
