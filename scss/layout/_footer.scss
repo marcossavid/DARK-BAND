@@ -1,0 +1,23 @@
+/* Estilos del footer ---------------------------------------------------------------------*/
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0; /* Espaciado interno */
+    
+    /* Fija el footer en la parte inferior de la ventana */
+    bottom: 0; /* Ubica el contenedor en la parte inferior */
+    left: 0; /* Alinea el contenedor a la izquierda */
+    right: 0; /* Alinea el contenedor a la derecha */
+
+    /* Estilo para el enlace en el pie de página */
+    a.contac-link {
+        text-decoration: underline; /* Elimina el subrayado */
+        color: #fff;
+
+        &:hover {
+            text-decoration: underline; /* Mantiene el subrayado en el hover */
+            color: #4705fc; /* Cambia el color al hacer hover */
+        }
+    }
+}

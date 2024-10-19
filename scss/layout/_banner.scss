@@ -1,0 +1,35 @@
+/* BANNER -----------------------------------------------------------------------------------------*/
+
+.banner {
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    height: 600px; /* Altura del banner */
+    background-image: url("../assets/mujerjoven.webp"); /* La imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el área */
+    background-position: center; /* Centra la imagen en el banner */
+    display: flex; /* Activa Flexbox para este contenedor */
+    flex-direction: column; /* Alinea los elementos hijos (h1 y p) en columna */
+    align-items: center; /* Centra horizontalmente los elementos */
+    justify-content: center; /* Centra verticalmente los elementos */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto dentro de cada elemento */
+    font-size: 3rem; /* El tamaño de la letra */
+    
+    h1 {
+        margin: 0; /* Elimina el margen del h1 para mejor control del espaciado */
+        font-size: 3rem;
+    }
+
+    p {
+        margin: 0; /* Elimina el margen del párrafo */
+        margin-top: 10px; /* Añade un pequeño margen superior para separación */
+        font-size: 2rem; /* Ajusta el tamaño del texto del párrafo */
+    }
+
+    /* Ajuste para pantallas más pequeñas mobile */
+    @media screen and (max-width: 768px) {
+        height: 400px;
+        font-size: 3rem;
+    }
+}
+
+/* fin banner -- */

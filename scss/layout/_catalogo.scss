@@ -1,0 +1,87 @@
+/* CATALOGO DE ROPA ------------------------------------------------------------- */
+
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px; 
+    /* Define un contenedor con un ancho del 80% del contenedor padre (pantalla) y lo centra horizontalmente usando margin: auto. */
+}
+
+/* Estilos del main */
+.products {
+    display: flex; /* Habilita Flexbox */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias filas si es necesario */
+    gap: 50px; /* Espacio entre los productos */
+    padding: 32px 0; /* Añade un relleno vertical para separar la sección de productos del contenido alrededor. */
+}
+
+.product {
+    flex: 1 1 calc(25% - 20px); /* Ajusta el ancho del producto, considerando el espacio entre elementos */
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    background: #f9f9f9;
+    box-sizing: border-box; /* Incluye el padding y el borde en el cálculo del ancho */
+    
+    img {
+        width: 100%;
+        max-width: 300px;
+        height: 400px;
+        object-fit: cover; /* Recorta la imagen para que se ajuste al contenedor manteniendo las proporciones */
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin: 10px 0;
+    }
+
+    .price {
+        font-size: 1.2rem;
+        color: #333;
+        margin: 10px 0;
+    }
+
+    .btn {
+        background: #333;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: inline-block;
+        
+        &:hover {
+            background: #555;
+            color:#fff;
+        }
+    }
+
+    /* Consultas de medios para adaptabilidad */
+    @media (max-width: 1200px) {
+        flex: 1 1 calc(33.333% - 20px); /* 3 productos por fila */
+    }
+
+    @media (max-width: 900px) {
+        flex: 1 1 calc(50% - 20px); /* 2 productos por fila */
+    }
+
+    @media (max-width: 600px) {
+        flex: 1 1 100%; /* 1 producto por fila */
+    }
+}
+
+#cart-link { /* puntito del carrito. El símbolo # en CSS se utiliza para seleccionar un elemento HTML por su id*/
+    position: relative;
+    display: inline-block;
+
+   
+}
+#cart-notification {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: none;
+}
+/* fin catalogo --------------------------------------------------------------------------------------------- */

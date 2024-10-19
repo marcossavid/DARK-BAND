@@ -1,0 +1,40 @@
+/* Reset del CSS. configuración universal de la página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Este valor asegura que el ancho y alto de los elementos incluyan el relleno y el borde*/
+}
+
+/* Configuración del body */
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+}
+
+/* Contenido principal */
+.content {
+    flex: 1; /* Hace que el contenido ocupe todo el espacio disponible */
+}
+
+/*linea---------------------------------------------------------------------------------------*/
+hr {
+    width: 80%;
+    border: 0; /* Elimina el borde por defecto */
+    height: 1px; /* Altura de la línea */
+    background-color: #aaaaaa; /* Color de la línea */
+    margin:auto;
+}
+/*fin de linea--------------------------------------------------------------------------------*/
