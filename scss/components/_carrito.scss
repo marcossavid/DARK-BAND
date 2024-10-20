@@ -1,60 +1,112 @@
-
 /* Estilos para centrar y crear el cuadrado */
 .containercar {
-    display: flex; /* Activa flexbox */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    height: 100vh; /* Altura total de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin-top: 20px;
     margin-bottom: 20px;
+}
 
+.boxcar {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    width: auto; /* Usa un ancho adecuado para pruebas */
+    height: auto;
+    max-width: 900px; /* Limita el ancho máximo */
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    img {
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+    }
+    .descripcion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        width: 50%;
+        gap: 20px;
+        h2 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+        .color-selector,.size-selector,.quantity-selector {
+             margin: 10px 0;
+        }
+
+        .comprar-btn {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 0px; 
+            cursor: pointer;
+            transition: background 0.3s;
+            &:hover {
+                background: #555; /* Fondo más claro al pasar el mouse */
+            }
+        }
+      
+    }
+    
+}
+/* Consultas de medios para adaptabilidad */
+@media (max-width: 900px) {
     .boxcar {
-        display: flex; /* Activa flexbox para el contenido del box */
-        width: auto; /* Deja que el ancho se ajuste al contenido */
-        height: auto; /* Deja que la altura se ajuste al contenido */
-        background: #f9f9f9;
-        border: 1px solid #ddd;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        padding: 20px; /* Relleno interno para separar el contenido del borde */
-        
-        /* Estilos para la imagen */
-        img {
-            width: 50%; /* Ocupa la mitad del espacio */
-            height: auto; /* Mantiene la proporción de la imagen */
-            object-fit: cover; /* Recorta la imagen si es necesario */
-        }
+        flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
+        padding: 15px;
+        max-width: 100%; /* Asegúrate de que no haya restricción de ancho */
+    }
 
-        /* Estilos para la descripción */
-        .descripcion {
-            display: flex; /* Activa flexbox para los elementos dentro */
-            flex-direction: column; /* Apila los elementos verticalmente */
-            justify-content: center; /* Centra verticalmente el contenido */
-            padding: 20px; /* Relleno interno */
-            width: 50%; /* Ocupa la otra mitad del espacio */
-            gap: 20px; /* Espacio entre los elementos */
+    img {
+        width: 100%; /* La imagen ocupa todo el ancho */
+    }
 
-            h2 {
-                font-size: 1.5rem; /* Tamaño del título */
-                margin: 10px 0; /* Margen vertical */
-            }
-
-            .color-selector, .size-selector, .quantity-selector {
-                margin: 10px 0; /* Margen vertical entre secciones */
-            }
-
-            /* Estilo para botones */
-            .comprar-btn {
-                background: #333; /* Fondo oscuro */
-                color: #fff; /* Texto blanco */
-                padding: 10px 20px; /* Relleno */
-                border: none; /* Sin borde */
-                cursor: pointer; /* Cambia el cursor al pasar por encima */
-                transition: background 0.3s; /* Transición suave */
-
-                &:hover {
-                    background: #555; /* Fondo más claro al pasar el mouse */
-                }
-            }
-        }
+    .descripcion {
+        width: 100%; /* La descripción ocupa todo el ancho */
+        margin: auto; /* Asegúrate de que esté centrado */
+        gap: 15px; /* Reduce el espacio entre elementos */
     }
 }
+
+@media (max-width: 600px) {
+    .containercar{
+        margin-bottom: 120px;
+        margin-top: 120px;
+
+    }
+    .boxcar {
+        flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
+        padding: 15px;
+        max-width: 100%; /* Asegúrate de que no haya restricción de ancho */
+
+    }
+
+    img {
+        width: 100%; /* La imagen ocupa todo el ancho */
+        margin:auto;
+    }
+
+    .descripcion {
+        width: 100%; /* La descripción ocupa todo el ancho */
+        margin: auto; /* Asegúrate de que esté centrado */
+        gap: 15px; /* Reduce el espacio entre elementos */
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
