@@ -56,6 +56,11 @@
 }
 /* Consultas de medios para adaptabilidad */
 @media (max-width: 900px) {
+    .containercar{
+        margin-bottom: 120px;
+        margin-top: 120px;
+
+    }
     .boxcar {
         flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
         padding: 15px;
@@ -64,6 +69,7 @@
 
     img {
         width: 100%; /* La imagen ocupa todo el ancho */
+        margin:auto;
     }
 
     .descripcion {
@@ -73,7 +79,7 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     .containercar{
         margin-bottom: 120px;
         margin-top: 120px;
