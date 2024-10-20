@@ -67,9 +67,55 @@
     </header>
     <!--Fin de barra de navegacion--------------------------------------------------------------------->
    
-    <div class="containercar">
-        <div class="boxcar"></div> <!-- Cuadrado rojo con borde negro -->
+    
+     <!--CARRITO------------------------------------------------------------------------------->
+
+     <div class="containercar">
+        <div class="boxcar">
+            <!--img-->
+            <img src="../assets/vestido.webp" alt="Vestido de noche" />
+
+            
+            <div class="descripcion">
+
+                 <!--titulo-->
+                <h2>Vestido de noche</h2>
+
+                <!--color-->
+                <div class="color-selector">
+
+                    <label for="color">Color:</label>
+
+                    <select id="color">
+                        <option value="rojo">Rojo</option>
+                        <option value="azul">Azul</option>
+                        <option value="verde">Verde</option>
+                    </select>
+
+                </div>
+
+                 <!--talla-->
+                <div class="size-selector">
+                    <label for="size">Talle:</label>
+                    <select id="size">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                    </select>
+                </div>
+
+                <!--cantidad-->
+                <div class="quantity-selector">
+                    <label for="quantity">Cantidad:</label>
+                    <input type="number" id="quantity" value="1" min="1" />
+                </div>
+                <button class="comprar-btn">Comprar</button>
+            </div>
+        </div>
     </div>
+    
+
+<!--FIN DEL CARRITO--------------------------------------------------------------------------->
 
 
 </div>

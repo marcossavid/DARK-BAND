@@ -1,15 +1,60 @@
+
 /* Estilos para centrar y crear el cuadrado */
 .containercar {
     display: flex; /* Activa flexbox */
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
     height: 100vh; /* Altura total de la pantalla */
-  }
-  
-  .boxcar {
-    width: 400px;
-    height: 400px;
-    background-color: red; /* Fondo rojo */
-    border: 5px solid rgb(77, 234, 134); /* Borde negro de 5px */
-  }
-  
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .boxcar {
+        display: flex; /* Activa flexbox para el contenido del box */
+        width: auto; /* Deja que el ancho se ajuste al contenido */
+        height: auto; /* Deja que la altura se ajuste al contenido */
+        background: #f9f9f9;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px; /* Relleno interno para separar el contenido del borde */
+        
+        /* Estilos para la imagen */
+        img {
+            width: 50%; /* Ocupa la mitad del espacio */
+            height: auto; /* Mantiene la proporción de la imagen */
+            object-fit: cover; /* Recorta la imagen si es necesario */
+        }
+
+        /* Estilos para la descripción */
+        .descripcion {
+            display: flex; /* Activa flexbox para los elementos dentro */
+            flex-direction: column; /* Apila los elementos verticalmente */
+            justify-content: center; /* Centra verticalmente el contenido */
+            padding: 20px; /* Relleno interno */
+            width: 50%; /* Ocupa la otra mitad del espacio */
+            gap: 20px; /* Espacio entre los elementos */
+
+            h2 {
+                font-size: 1.5rem; /* Tamaño del título */
+                margin: 10px 0; /* Margen vertical */
+            }
+
+            .color-selector, .size-selector, .quantity-selector {
+                margin: 10px 0; /* Margen vertical entre secciones */
+            }
+
+            /* Estilo para botones */
+            .comprar-btn {
+                background: #333; /* Fondo oscuro */
+                color: #fff; /* Texto blanco */
+                padding: 10px 20px; /* Relleno */
+                border: none; /* Sin borde */
+                cursor: pointer; /* Cambia el cursor al pasar por encima */
+                transition: background 0.3s; /* Transición suave */
+
+                &:hover {
+                    background: #555; /* Fondo más claro al pasar el mouse */
+                }
+            }
+        }
+    }
+}
