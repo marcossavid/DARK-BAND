@@ -55,6 +55,18 @@ hr {
   background-color: #575757;
   color: white;
 }
+@media (max-width: 600px) {
+  .navbar-custom .nav-link {
+    width: 400px;
+    text-align: start;
+  }
+}
+@media (max-width: 900px) {
+  .navbar-custom .nav-link {
+    width: 400px;
+    text-align: start;
+  }
+}
 
 .navbar-toggler {
   border: none !important;
@@ -337,6 +349,8 @@ footer a.contac-link:hover {
     width: 100%; /* La descripción ocupa todo el ancho */
     margin: auto; /* Asegúrate de que esté centrado */
     gap: 15px; /* Reduce el espacio entre elementos */
+    align-items: center; /* Centra horizontalmente el contenido */
+    text-align: center; /* Centra el texto */
   }
 }
 @media (max-width: 600px) {
@@ -357,6 +371,8 @@ footer a.contac-link:hover {
     width: 100%; /* La descripción ocupa todo el ancho */
     margin: auto; /* Asegúrate de que esté centrado */
     gap: 15px; /* Reduce el espacio entre elementos */
+    align-items: center; /* Centra horizontalmente el contenido */
+    text-align: center; /* Centra el texto */
   }
 }
 /*VIDEO-----------------------------------------------------------------------------------------*/

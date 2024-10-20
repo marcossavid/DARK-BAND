@@ -15,7 +15,33 @@
             color: white; // Color del texto en hover
         }
     }
+
+
+    @media (max-width: 600px) {
+        .nav-link {
+            width:400px;
+            text-align: start;
+          
+        }
+    }
+    
+    @media (max-width: 900px) {
+        .nav-link {
+            width:400px;
+            text-align: start;
+          
+        }
+    }
+    
+
+
+
 }
+
+
+
+
+
 
 .navbar-toggler {
     border: none !important; // Elimina el borde del botón

@@ -76,6 +76,8 @@
         width: 100%; /* La descripción ocupa todo el ancho */
         margin: auto; /* Asegúrate de que esté centrado */
         gap: 15px; /* Reduce el espacio entre elementos */
+        align-items: center; /* Centra horizontalmente el contenido */
+        text-align: center; /* Centra el texto */
     }
 }
 
@@ -101,7 +103,8 @@
         width: 100%; /* La descripción ocupa todo el ancho */
         margin: auto; /* Asegúrate de que esté centrado */
         gap: 15px; /* Reduce el espacio entre elementos */
-        
+        align-items: center; /* Centra horizontalmente el contenido */
+        text-align: center; /* Centra el texto */
     }
 }
 
