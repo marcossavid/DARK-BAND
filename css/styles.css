@@ -1,4 +1,45 @@
 @charset "UTF-8";
+/* Reset del CSS. configuración universal de la página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*Este valor asegura que el ancho y alto de los elementos incluyan el relleno y el borde*/
+}
+
+/* Configuración del body */
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Contenedor principal */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+}
+
+/* Contenido principal */
+.content {
+  flex: 1; /* Hace que el contenido ocupe todo el espacio disponible */
+}
+
+/*linea---------------------------------------------------------------------------------------*/
+hr {
+  width: 80%;
+  border: 0; /* Elimina el borde por defecto */
+  height: 1px; /* Altura de la línea */
+  background-color: #aaaaaa; /* Color de la línea */
+  margin: auto;
+}
+
+/*fin de linea--------------------------------------------------------------------------------*/
 /* ESTILOS DE BARRA DE NAVEGACION ----------------------------------------------------------------------------------*/
 .navbar-custom {
   background-color: #333;
@@ -45,47 +86,6 @@
   box-shadow: none !important;
 }
 
-/* Reset del CSS. configuración universal de la página */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; /*Este valor asegura que el ancho y alto de los elementos incluyan el relleno y el borde*/
-}
-
-/* Configuración del body */
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  color: #333;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-/* Contenedor principal */
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
-}
-
-/* Contenido principal */
-.content {
-  flex: 1; /* Hace que el contenido ocupe todo el espacio disponible */
-}
-
-/*linea---------------------------------------------------------------------------------------*/
-hr {
-  width: 80%;
-  border: 0; /* Elimina el borde por defecto */
-  height: 1px; /* Altura de la línea */
-  background-color: #aaaaaa; /* Color de la línea */
-  margin: auto;
-}
-
-/*fin de linea--------------------------------------------------------------------------------*/
 /* BANNER -----------------------------------------------------------------------------------------*/
 .banner {
   width: 100%; /* Ocupa todo el ancho de la pantalla */
@@ -231,6 +231,53 @@ hr {
 }
 
 /* fin catalogo --------------------------------------------------------------------------------------------- */
+/*REGISTRO-------------------------------------------------*/
+.btn-global {
+  background-color: #333 !important;
+  border-color: #333 !important;
+  margin: 10px 0;
+}
+.btn-global:hover {
+  background-color: #555 !important;
+  border-color: #555 !important;
+}
+
+/* Estilos del footer ---------------------------------------------------------------------*/
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0; /* Espaciado interno */
+  /* Fija el footer en la parte inferior de la ventana */
+  bottom: 0; /* Ubica el contenedor en la parte inferior */
+  left: 0; /* Alinea el contenedor a la izquierda */
+  right: 0; /* Alinea el contenedor a la derecha */
+  /* Estilo para el enlace en el pie de página */
+}
+footer a.contac-link {
+  text-decoration: underline; /* Elimina el subrayado */
+  color: #fff;
+}
+footer a.contac-link:hover {
+  text-decoration: underline; /* Mantiene el subrayado en el hover */
+  color: #1fe5ff; /* Cambia el color al hacer hover */
+}
+
+/* Estilos para centrar y crear el cuadrado */
+.containercar {
+  display: flex; /* Activa flexbox */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* Altura total de la pantalla */
+}
+
+.boxcar {
+  width: 400px;
+  height: 400px;
+  background-color: red; /* Fondo rojo */
+  border: 5px solid rgb(77, 234, 134); /* Borde negro de 5px */
+}
+
 /*VIDEO-----------------------------------------------------------------------------------------*/
 .video {
   position: relative; /* Necesario para posicionar el contenido sobre el video */
@@ -273,34 +320,5 @@ hr {
 }
 
 /*fin del video---------------------------------------------------------------------------------*/
-/*REGISTRO-------------------------------------------------*/
-.btn-global {
-  background-color: #333 !important;
-  border-color: #333 !important;
-  margin: 10px 0;
-}
-.btn-global:hover {
-  background-color: #555 !important;
-  border-color: #555 !important;
-}
 
-/* Estilos del footer ---------------------------------------------------------------------*/
-footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0; /* Espaciado interno */
-  /* Fija el footer en la parte inferior de la ventana */
-  bottom: 0; /* Ubica el contenedor en la parte inferior */
-  left: 0; /* Alinea el contenedor a la izquierda */
-  right: 0; /* Alinea el contenedor a la derecha */
-  /* Estilo para el enlace en el pie de página */
-}
-footer a.contac-link {
-  text-decoration: underline; /* Elimina el subrayado */
-  color: #fff;
-}
-footer a.contac-link:hover {
-  text-decoration: underline; /* Mantiene el subrayado en el hover */
-  color: #4705fc; /* Cambia el color al hacer hover */
-}
+/*# sourceMappingURL=styles.css.map */

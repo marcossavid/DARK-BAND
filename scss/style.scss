@@ -1,10 +1,14 @@
 
 
-@use "./layout/header";
+
 @use "./base/reset";
+
+@use "./layout/header";
 @use "./layout/banner";
 @use "./layout/categorias";
 @use "./layout/catalogo";
-@use "./components/video";
 @use "./layout/registro";
 @use "./layout/footer";
+
+@use "./components/carrito";
+@use "./components/video";

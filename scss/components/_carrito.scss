@@ -1,0 +1,15 @@
+/* Estilos para centrar y crear el cuadrado */
+.containercar {
+    display: flex; /* Activa flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Altura total de la pantalla */
+  }
+  
+  .boxcar {
+    width: 400px;
+    height: 400px;
+    background-color: red; /* Fondo rojo */
+    border: 5px solid rgb(77, 234, 134); /* Borde negro de 5px */
+  }
+  
