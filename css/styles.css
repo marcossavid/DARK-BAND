@@ -334,7 +334,7 @@ footer a.contac-link:hover {
     gap: 15px; /* Reduce el espacio entre elementos */
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 400px) {
   .containercar {
     margin-bottom: 120px;
     margin-top: 120px;
