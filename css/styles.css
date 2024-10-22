@@ -221,6 +221,8 @@ hr {
   text-decoration: none;
   display: inline-block;
   border-radius: 0px;
+  width: 80%; /* Ocupa todo el ancho del contenedor */
+  padding: 10px;
 }
 .product .btn:hover {
   background: #555;
