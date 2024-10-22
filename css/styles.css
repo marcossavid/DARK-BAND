@@ -131,6 +131,21 @@ hr {
 }
 
 /* fin banner -- */
+/*CARRUSEL---------------------------------------------------------------------------*/
+#carouselExampleAutoplaying {
+  max-width: 80%; /* Define el ancho máximo del carrusel */
+  height: auto; /* Establece una altura fija para el carrusel */
+  display: flex; /* Usa flexbox para centrar */
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  margin: 20px auto; /* Asegura que el carrusel esté centrado en su contenedor */
+}
+#carouselExampleAutoplaying .carousel-inner .carousel-item img {
+  width: 100%; /* Asegura que las imágenes se ajusten al ancho del carrusel */
+  height: auto; /* Mantiene la proporción de las imágenes */
+  object-fit: cover; /* Recorta las imágenes si es necesario para ajustarse */
+}
+
 /* BARRA DE CATEGORIAS ---------------------------------------------------------- */
 .navcategorias {
   display: flex;
@@ -323,6 +338,8 @@ footer a.contac-link:hover {
   padding: 10px 20px;
   border: none;
   border-radius: 0px;
+  text-align: center;
+  text-decoration: none;
   cursor: pointer;
   transition: background 0.3s;
 }
