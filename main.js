@@ -24,6 +24,7 @@ addToCartButton.forEach(button => {  // Itera sobre cada botón en la lista 'add
 // Obtener elementos
 const modal = document.getElementById('modal');
 const closeButton = document.getElementById('close-button');
+
 const goToCartButton = document.getElementById('go-to-cart');
 const continueShoppingButton = document.getElementById('continue-shopping');
 
@@ -38,7 +39,7 @@ function closeModal() {
 }
 
 // Agregar evento al botón de agregar al carrito
-const addToCartButtons = document.querySelectorAll('.comprar-btn'); // Asegúrate de que esta clase sea la correcta
+const addToCartButtons = document.querySelectorAll('.comprar-btn'); 
 addToCartButtons.forEach(button => {
     button.addEventListener('click', openModal);
 });
@@ -60,3 +61,21 @@ goToCartButton.addEventListener('click', function() {
 
 // Cerrar el modal y continuar comprando
 continueShoppingButton.addEventListener('click', closeModal);
+
+
+
+
+
+
+
+
+
+
+const eliminarButtons = document.querySelectorAll('.eliminar');
+
+eliminarButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        const boxcarrito = this.parentElement; // Obtiene el padre del botón
+        boxcarrito.remove(); // Elimina el boxcarrito del DOM
+    });
+});

@@ -481,6 +481,11 @@ footer a.contac-link:hover {
 .carrito .productoscarrito .boxcarrito p {
   margin: 0 0;
 }
+.carrito .productoscarrito .boxcarrito button {
+  font-size: 28px;
+  background-color: #f9f9f9;
+  border: #f9f9f9;
+}
 .carrito .boxubicacion {
   display: flex;
   flex-direction: row;

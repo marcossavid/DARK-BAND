@@ -82,7 +82,7 @@
             
              <div class="productoscarrito">
 
-                <div class="boxcarrito">
+                <div class="boxcarrito" id="boxcarrito">
 
                      <!--img-->
                      <img src="../assets/vestido.webp" alt="Vestido de noche" />
@@ -106,7 +106,7 @@
         
                         </div>
         
-                         <!--talla-->
+                         <!--talla--->
                         <div class="size-selector">
                             <label for="size">Talle:</label>
                             <select id="size">
@@ -116,11 +116,14 @@
                             </select>
                         </div>
         
-                        <!--cantidad-->
+                        <!--cantidad--->
                         <div class="quantity-selector">
                             <label for="quantity">Cantidad:</label>
                             <input type="number" id="quantity" value="1" min="1" style="width: 60px;"/>
                         </div>
+
+                        <!--close botton-->
+                        <button id="eliminar" class="eliminar">&times;</button>
                         
                  </div>
 
@@ -149,19 +152,19 @@
 
             <div class="boxubicacion">
                 
-                <input type="text" class="form-control" id="provincia" placeholder="Provincia*" required>
+                <input type="text" class="form-control" id="provincia" placeholder="Ciudad*" required>
                    
             </div>
 
             <div class="boxubicacion">
                 
-                <input type="text" class="form-control" id="provincia" placeholder="Provincia*" required>
+                <input type="text" class="form-control" id="provincia" placeholder="Calle*" required>
                    
             </div>
 
             <div class="boxubicacion">
                 
-                <input type="text" class="form-control" id="provincia" placeholder="Provincia*" required>
+                <input type="text" class="form-control" id="provincia" placeholder="Referencias" required>
                    
             </div>
 
@@ -203,7 +206,7 @@
 
 </body>
 
-<script src="main.js"></script>
+<script src="../main.js"></script>
 <!--script boobstrap-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
