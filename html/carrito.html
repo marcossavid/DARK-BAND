@@ -3,175 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark Band</title>
+    <title>DarkBand</title>
     <link rel="stylesheet" href="../css/styles.css"> <!-- Vincular el CSS -->
 
     <!--icono de identificacion del sitio-->
-    <link rel="icon" href="../iconos/favicon.ico" type="image/x-icon"> 
+    <link rel="icon" href="iconos/favicon.ico" type="image/x-icon"> 
     <!-- Iconos para dispositivos Apple -->
-    <link rel="apple-touch-icon" sizes="180x180" href="../iconos/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="iconos/apple-touch-icon.png">
     
     <!-- Iconos para Android -->
-    <link rel="icon" type="image/png" sizes="192x192" href="../iconos/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="../iconos/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="iconos/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="iconos/android-chrome-512x512.png">
     <!-- Manifesto para PWA -->
-    <link rel="manifest" href="../manifest.json">
+    <link rel="manifest" href="manifest.json">
     <!--BOOBSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+    <!--Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
 </head>
+
+
 
 <body>
 
-<div class="wrapper">    
+    <div class="wrapper">    
 
-    <!-- BARRA DE NAVEGACION(nav)-------------------------------------------------------------------------->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-custom">
+        <!--BARRA DE NAVEGACION-->
+         <header>
+             <nav class="navbar navbar-expand-lg navbar-custom">
 
-            <div class="container-fluid">
+                 <div class="container-fluid">
 
-                <!-- Logo -->
-                <a class="navbar-brand" href="../index.html">
-                    <img src="../iconos/logo.webp" alt="Logo de la Marca" height="50">
-                </a>
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../iconos/logo.webp" alt="Logo de la Marca" height="50">
+                    </a>
 
-                <!-- Botón para el menú móvil -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <!-- Botón para el menú móvil -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <!-- Enlaces de navegación -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="mujer.html">Mujer</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="hombre.html">Hombre</a>
-                        </li>
-                        <li class="nav-item">
-                            <div id="cart-link">
-                                <a class="nav-link" href="carrito.html">Carrito</a>
-                                <div id="cart-notification"></div> <!-- Puntito de notificación -->
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="registrarse.html" >Registrarse</a>
-                        </li>
-                    </ul>
+                    <!-- Enlaces de navegación -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mujer.html">Mujer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="hombre.html">Hombre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="carrito.html" >Carrito</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="registrarse.html" >Registrarse</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+             </nav>
 
-    </header>
-    <!--Fin de barra de navegacion--------------------------------------------------------------------->
-   
-    
-     <!--CARRITO------------------------------------------------------------------------------->
+         </header>
 
-     <div class="containercar">
-        <div class="boxcar">
-            <!--img-->
-            <img src="../assets/vestido.webp" alt="Vestido de noche" />
+         <!--Fin de barra de navegacion--------------------------------------------------------------------->
 
+
+        <div class="carrito">
+
+             <h4> Tu carrito</h4>
+             <hr>
+         
             
-            <div class="descripcion">
+             <div class="productoscarrito">
 
-                 <!--titulo-->
-                <h2>Vestido de noche</h2>
+                <div class="boxcarrito">
+
+                     <!--img-->
+                     <img src="../assets/vestido.webp" alt="Vestido de noche" />
+        
+        
+                      <!--titulo-->
+                     <p>CARRITO</p>
+                     <p>ID:#8967</p>
+                        
+                        
+                     <!--color-->
+                     <div class="color-selector">
+        
+                            <label for="color">Color:</label>
+        
+                            <select id="color">
+                                <option value="rojo">Rojo</option>
+                                <option value="azul">Azul</option>
+                                <option value="verde">Verde</option>
+                            </select>
+        
+                        </div>
+        
+                         <!--talla-->
+                        <div class="size-selector">
+                            <label for="size">Talle:</label>
+                            <select id="size">
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                            </select>
+                        </div>
+        
+                        <!--cantidad-->
+                        <div class="quantity-selector">
+                            <label for="quantity">Cantidad:</label>
+                            <input type="number" id="quantity" value="1" min="1" style="width: 60px;"/>
+                        </div>
+                        
+                 </div>
+
+             </div>
+         </div>
+
+
+
+
+    <!--UBICACION------------------------------------------------------------>
+
+
+    <div class="carrito">
+
+        <h4> Ubicación</h4>
+        <hr>
+    
+       
+       
+
+           <div class="boxubicacion">
                 
-                <div class="hr"><hr></div>
-                
-                <!--color-->
-                <div class="color-selector">
-
-                    <label for="color">Color:</label>
-
-                    <select id="color">
-                        <option value="rojo">Rojo</option>
-                        <option value="azul">Azul</option>
-                        <option value="verde">Verde</option>
-                    </select>
-
-                </div>
-
-                 <!--talla-->
-                <div class="size-selector">
-                    <label for="size">Talle:</label>
-                    <select id="size">
-                        <option value="s">S</option>
-                        <option value="m">M</option>
-                        <option value="l">L</option>
-                    </select>
-                </div>
-
-                <!--cantidad-->
-                <div class="quantity-selector">
-                    <label for="quantity">Cantidad:</label>
-                    <input type="number" id="quantity" value="1" min="1" />
-                </div>
-                <a class="comprar-btn" href="comprar.html">Comprar</a>
+                <input type="text" class="form-control" id="provincia" placeholder="Provincia*" required>
+                   
             </div>
-        </div>
+
+            <div class="boxubicacion">
+                
+                <input type="text" class="form-control" id="provincia" placeholder="Provincia*" required>
+                   
+            </div>
+
+            <div class="boxubicacion">
+                
+                <input type="text" class="form-control" id="provincia" placeholder="Provincia*" required>
+                   
+            </div>
+
+            <div class="boxubicacion">
+                
+                <input type="text" class="form-control" id="provincia" placeholder="Provincia*" required>
+                   
+            </div>
+
+        
     </div>
-    
-
-<!--FIN DEL CARRITO--------------------------------------------------------------------------->
 
 
 
 
- <!--CATALOGO DE ROPA----------------------------------------------------------------------------------->
-            
- <div class="container"> 
-    <!-- un contenedor con un ancho del 80% del contenedor padre (pantalla) y lo centra 
-    horizontalmente usando margin: auto.-->
-       <main class="products" id="catalogo">
-            <!--El <main> debe contener el contenido principal de la página, es decir, la información que es específica y relevante para el propósito de esa página en particular.
-            Único por Página: Solo debe haber un <main> por página, ya que este representa el contenido central y principal. No debe incluirse dentro de otro contenido de nivel de bloque como <header>, <footer>, <nav>, o <aside>.
-            Accesibilidad: Mejora la accesibilidad al permitir a las tecnologías asistivas (como lectores de pantalla) saltar directamente al contenido principal de la página, ignorando elementos repetitivos como menús de navegación y encabezados.-->
-            <div class="product">
-               <img src="../assets/vestido.webp" alt="Producto 1"/>
-               <h2>Vestido de noche</h2>
-               <p class="price">$29.99</p>
-               <a href="#" class="btn">Agregar al carrito</a>
-            </div>
 
-            <div class="product">
-               <img src="../assets/pantalon.webp" alt="Producto 2"/>
-               <h2>Producto 2</h2>
-               <p class="price">$39.99</p>
-               <a href="#" class="btn">Agregar al carrito</a>
-            </div>
-            <div class="product">
-               <img src="../assets/remera.webp" alt="Producto 2"/>
-               <h2>Producto 2</h2>
-               <p class="price">$39.99</p>
-               <a href="#" class="btn">Agregar al carrito</a>
-            </div>
 
-       </main>
-</div>
+
+
+
+
+     </div>
+
 
 
    
 
-<!--FIN DEL CATALOGO------------------------------------------------------------------------------------>
 
 
 
 
 
-
-
-</div>
-    
-
- <!--PIE DE PAGINA----------------------------------------------------------------------------------->
+<!--PIE DE PAGINA----------------------------------------------------------------------------------->
     <footer>
         <div class="container">
             <p>&copy; 2024 Catálogo de Dark band. Todos los derechos reservados.</p>
@@ -179,14 +196,23 @@
             <p>Contacto:<a href="https://marcossavid14@gmail.com" class="contac-link"> marcossavid14@gmail.com</a></p>
         </div>
     </footer>
-  <!--fin de pie de pagina----------------------------------------------------------------------------->
+<!--fin de pie de pagina----------------------------------------------------------------------------->
 
     
 
+
 </body>
-<script src="../main.js"></script>
+
+<script src="main.js"></script>
 <!--script boobstrap-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<!--AOS-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+       
+  </script>
+
 </html>

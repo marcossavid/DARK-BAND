@@ -28,6 +28,10 @@ body {
 /* Contenido principal */
 .content {
   flex: 1; /* Hace que el contenido ocupe todo el espacio disponible */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra todo el contenido dentro de .content */
 }
 
 /*linea---------------------------------------------------------------------------------------*/
@@ -36,7 +40,7 @@ hr {
   border: 0; /* Elimina el borde por defecto */
   height: 1px; /* Altura de la línea */
   background-color: #aaaaaa; /* Color de la línea */
-  margin: auto;
+  margin: 0 auto; /* Asegura el centrado horizontal */
 }
 
 /*fin de linea--------------------------------------------------------------------------------*/
@@ -397,6 +401,50 @@ footer a.contac-link:hover {
     text-align: center; /* Centra el texto */
   }
 }
+.carrito {
+  width: 80%;
+  align-items: center;
+  margin: 32px auto;
+}
+.carrito hr {
+  width: 100%;
+}
+.carrito .productoscarrito {
+  display: flex;
+  flex-direction: row;
+}
+.carrito .productoscarrito .boxcarrito {
+  display: flex;
+  gap: 15px;
+  height: 80px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.carrito .productoscarrito .boxcarrito img {
+  width: 64px;
+  height: 64px;
+}
+.carrito .productoscarrito .boxcarrito p {
+  margin: 0 0;
+}
+.carrito .boxubicacion {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin: 15px auto;
+}
+.carrito .boxubicacion input {
+  background-color: #f9f9f9;
+  border: #f9f9f9;
+}
+
 /*VIDEO-----------------------------------------------------------------------------------------*/
 .video {
   position: relative; /* Necesario para posicionar el contenido sobre el video */

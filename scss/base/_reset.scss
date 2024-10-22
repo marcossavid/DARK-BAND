@@ -28,7 +28,15 @@ body {
 
 /* Contenido principal */
 .content {
-    flex: 1; /* Hace que el contenido ocupe todo el espacio disponible */
+     flex: 1;/* Hace que el contenido ocupe todo el espacio disponible */
+     
+     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra todo el contenido dentro de .content */
+    
+    
+    
 }
 
 /*linea---------------------------------------------------------------------------------------*/
@@ -37,6 +45,7 @@ hr {
     border: 0; /* Elimina el borde por defecto */
     height: 1px; /* Altura de la línea */
     background-color: #aaaaaa; /* Color de la línea */
-    margin:auto;
+    margin: 0 auto; /* Asegura el centrado horizontal */
+   
 }
 /*fin de linea--------------------------------------------------------------------------------*/

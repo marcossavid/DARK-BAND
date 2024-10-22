@@ -1,5 +1,5 @@
-// Selecciona todos los elementos que tienen la clase '.btn' (los botones de "Agregar al carrito")
-const addToCartButton = document.querySelectorAll('.btn');
+// Selecciona todos los elementos que tienen la clase '.comprar-btn' (los botones de "Agregar al carrito")
+const addToCartButton = document.querySelectorAll('.comprar-btn');
 
 // Selecciona el elemento con el id 'cart-notification' (el puntito de notificación)
 const cartNotification = document.getElementById('cart-notification');
