@@ -358,6 +358,7 @@ footer a.contac-link:hover {
   .containercar {
     margin-bottom: 60px;
     margin-top: 60px;
+    height: auto;
   }
   .boxcar {
     flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
@@ -383,6 +384,7 @@ footer a.contac-link:hover {
   .containercar {
     margin-bottom: 60px;
     margin-top: 60px;
+    height: auto;
   }
   .boxcar {
     flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
@@ -401,6 +403,54 @@ footer a.contac-link:hover {
     text-align: center; /* Centra el texto */
   }
 }
+/* Estilo para la ventana modal */
+.modal {
+  display: none; /* Ocultar el modal por defecto */
+  position: fixed; /* Mantenerlo en la misma posición */
+  z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
+  left: 0;
+  top: 0;
+  width: 100%; /* Ancho completo */
+  height: 100%; /* Alto completo */
+  overflow: auto; /* Habilitar el desplazamiento si es necesario */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+}
+.modal .modal-content {
+  background-color: #fff; /* Fondo blanco */
+  margin: 15% auto; /* Margen superior e inferior */
+  padding: 20px; /* Espaciado interno */
+  border: 1px solid #888; /* Borde */
+  width: 300px; /* Ancho de la ventana modal */
+  text-align: center; /* Centrar el texto */
+  gap: 15px;
+}
+.modal .modal-content .close-button {
+  color: #aaa; /* Color del botón de cerrar */
+  float: right; /* Posición en la esquina superior derecha */
+  font-size: 28px; /* Tamaño de la fuente */
+  font-weight: bold; /* Negrita */
+}
+.modal .modal-content .close-button:hover,
+.modal .modal-content .close-button:focus {
+  color: black; /* Color al pasar el mouse */
+  text-decoration: none; /* Sin subrayado */
+  cursor: pointer; /* Cursor de puntero */
+}
+.modal .modal-content .btnmodal {
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.modal .modal-content .btnmodal:hover {
+  background: #555; /* Fondo más claro al pasar el mouse */
+}
+
 .carrito {
   width: 80%;
   align-items: center;
