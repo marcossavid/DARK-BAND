@@ -491,7 +491,7 @@ footer a.contac-link:hover {
   border: 1px solid #ddd;
   align-items: center;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .carrito .productoscarrito .boxcarrito .box1 {
   display: flex;
@@ -512,15 +512,8 @@ footer a.contac-link:hover {
 }
 @media (max-width: 980px) {
   .carrito .productoscarrito .boxcarrito {
-    display: flex;
     gap: 15px;
     height: 200px;
-    padding: 20px 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    align-items: center;
-    width: 100%;
-    justify-content: space-around;
   }
   .carrito .productoscarrito .boxcarrito .box1 {
     margin: 10px;
@@ -540,15 +533,8 @@ footer a.contac-link:hover {
 }
 @media (max-width: 600px) {
   .carrito .productoscarrito .boxcarrito {
-    display: flex;
     gap: 15px;
     height: 200px;
-    padding: 20px 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
   }
   .carrito .productoscarrito .boxcarrito .box1 {
     margin: 10px;
@@ -568,15 +554,8 @@ footer a.contac-link:hover {
 }
 @media (max-width: 400px) {
   .carrito .productoscarrito .boxcarrito {
-    display: flex;
     gap: 15px;
     height: 200px;
-    padding: 20px 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
   }
   .carrito .productoscarrito .boxcarrito .box1 {
     margin: 10px;
@@ -599,8 +578,6 @@ footer a.contac-link:hover {
   flex-direction: row;
   height: 80px;
   padding: 20px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
   margin: 15px auto;
 }
 .carrito .boxubicacion input {

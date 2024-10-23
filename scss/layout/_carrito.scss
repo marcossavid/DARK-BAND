@@ -22,7 +22,7 @@
         border: 1px solid #ddd;
         align-items: center;
         width: 100%;
-        justify-content: space-between;
+        justify-content: space-around;
 
         .box1{
             display: flex;
@@ -58,16 +58,11 @@
             
                 
                 .boxcarrito{
-                    display: flex;
                     
                     gap: 15px;
                     height: 200px;
-                    padding: 20px 20px;
-                    background-color: #f9f9f9;
-                    border: 1px solid #ddd;
-                    align-items: center;
-                    width: 100%;
-                    justify-content:space-around;
+                    
+                  
 
                     .box1{
                         margin: 10px;
@@ -93,16 +88,10 @@
             
             
             .boxcarrito{
-                display: flex;
-                
                 gap: 15px;
                 height: 200px;
-                padding: 20px 20px;
-                background-color: #f9f9f9;
-                border: 1px solid #ddd;
-                align-items: center;
-                width: 100%;
-                justify-content: space-between;
+                
+               
 
                 .box1{
                     margin: 10px;
@@ -129,16 +118,11 @@
             
                 
             .boxcarrito{
-                display: flex;
                 
                 gap: 15px;
                 height: 200px;
-                padding: 20px 20px;
-                background-color: #f9f9f9;
-                border: 1px solid #ddd;
-                align-items: center;
-                width: 100%;
-                justify-content: space-between;
+                
+                
 
                 .box1{
                     margin: 10px;
@@ -170,7 +154,6 @@
 
 
     
-    
 
    .boxubicacion {
 
@@ -178,8 +161,6 @@
     flex-direction: row;
     height: 80px;
     padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
     margin: 15px auto;
     input {
         background-color: #f9f9f9;
