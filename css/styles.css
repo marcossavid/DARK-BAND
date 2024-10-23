@@ -584,7 +584,8 @@ footer a.contac-link:hover {
   background-color: #f9f9f9;
   border: #f9f9f9;
 }
-.carrito .boxmediodepago {
+
+.boxmediodepago {
   width: 600px;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
@@ -592,13 +593,13 @@ footer a.contac-link:hover {
   align-items: center;
   padding: 40px;
 }
-.carrito .boxmediodepago .datos {
+.boxmediodepago .datos {
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
   gap: 20px;
 }
-.carrito .boxmediodepago .btncomprar {
+.boxmediodepago .btncomprar {
   background: #333;
   color: #fff;
   padding: 10px 20px;
@@ -610,22 +611,22 @@ footer a.contac-link:hover {
   padding: 10px;
   margin: auto;
 }
-.carrito .boxmediodepago .btncomprar:hover {
+.boxmediodepago .btncomprar:hover {
   background: #555;
   color: #fff;
 }
+
 @media (max-width: 700px) {
-  .carrito .boxmediodepago {
-    width: 400px;
+  .boxmediodepago {
+    width: auto;
   }
 }
 @media (max-width: 390px) {
-  .carrito .boxmediodepago {
-    width: 260px;
+  .boxmediodepago {
+    width: auto;
     padding: 20px;
   }
 }
-
 /*VIDEO-----------------------------------------------------------------------------------------*/
 .video {
   position: relative; /* Necesario para posicionar el contenido sobre el video */

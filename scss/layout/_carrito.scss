@@ -170,7 +170,11 @@
  }
 
 
- .boxmediodepago {
+
+
+}
+
+.boxmediodepago {
     width: 600px;
     
     background-color: #f9f9f9;
@@ -178,6 +182,7 @@
     margin: auto;
     align-items: center;
     padding: 40px;
+
     .datos {
         margin-top: 20px;
         margin-bottom: 20px;
@@ -209,15 +214,15 @@
   
  @media (max-width: 700px) {
     .boxmediodepago {
-        width: 400px;
+        width: auto;
     }
  }
 
  @media (max-width: 390px) {
     .boxmediodepago {
-        width: 260px;
+        width: auto;
         padding: 20px;
+ 
+       
     }
  }
-
-}
