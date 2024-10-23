@@ -621,7 +621,8 @@ footer a.contac-link:hover {
 }
 @media (max-width: 390px) {
   .carrito .boxmediodepago {
-    width: 300px;
+    width: 260px;
+    padding: 20px;
   }
 }
 
