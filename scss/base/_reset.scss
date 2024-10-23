@@ -40,12 +40,32 @@ body {
 }
 
 /*linea---------------------------------------------------------------------------------------*/
-hr {
+.linea {
     width: 80%;
-    border: 0; /* Elimina el borde por defecto */
-    height: 1px; /* Altura de la línea */
-    background-color: #aaaaaa; /* Color de la línea */
-    margin: 0 auto; /* Asegura el centrado horizontal */
-   
+    display: flex;
+   justify-content: center;  
+   align-items: center;     
+   margin: auto;
+ 
+    hr {
+        width: 80%;
+        border: 0; /* Elimina el borde por defecto */
+        height: 1px; /* Altura de la línea */
+        background-color: #888; /* Color de la línea */
+        margin: 0 auto; /* Asegura el centrado horizontal */
+        display: flex;
+        justify-content: center;  
+        align-items: center;      
+        text-align: center;
+    }
+    /*fin de linea--------------------------------------------------------------------------------*/
+    
 }
-/*fin de linea--------------------------------------------------------------------------------*/
+@media (max-width: 600px ) {
+    .linea {
+        width: 100%;
+        hr{
+            width: 100%;
+        }
+    }
+}

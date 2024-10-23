@@ -16,7 +16,6 @@
 
      .boxcarrito{
         display: flex;
-        gap: 15px;
         height: 80px;
         padding: 20px;
         background-color: #f9f9f9;
@@ -25,6 +24,13 @@
         width: 100%;
         justify-content: space-between;
 
+        .box1{
+            display: flex;
+            gap: 60px;
+            align-items: center;
+
+        }
+       
         img {
             width: 64px;
             height: 64px;
@@ -38,14 +44,133 @@
             background-color: #f9f9f9;
             border: #f9f9f9;
         }
+        
+
+     }
+    
+    
+        /* Consultas de medios para adaptabilidad */
+        @media (max-width: 1010px) {
+        
+        }
+
+        @media (max-width: 980px) {
+            
+                
+                .boxcarrito{
+                    display: flex;
+                    
+                    gap: 15px;
+                    height: 200px;
+                    padding: 20px 20px;
+                    background-color: #f9f9f9;
+                    border: 1px solid #ddd;
+                    align-items: center;
+                    width: 100%;
+                    justify-content:space-around;
+
+                    .box1{
+                        margin: 10px;
+                        flex-direction: row;
+                        display: block;
+                        gap: 20px;
+                        div {
+                            margin-top: 10px;
+                        }
+                        img {
+                            margin-top: 10px;
+                        }
+                        p{
+                            margin-top: 10px;
+                        }
+                    }
+            }
+        
+        
+        }
+
+        @media (max-width: 600px) {
+            
+            
+            .boxcarrito{
+                display: flex;
+                
+                gap: 15px;
+                height: 200px;
+                padding: 20px 20px;
+                background-color: #f9f9f9;
+                border: 1px solid #ddd;
+                align-items: center;
+                width: 100%;
+                justify-content: space-between;
+
+                .box1{
+                    margin: 10px;
+                    flex-direction: row;
+                    display: block;
+                    gap: 20px;
+                    div {
+                        margin-top: 10px;
+                    }
+                    img {
+                        margin-top: 10px;
+                    }
+                    p{
+                        margin-top: 10px;
+                    }
+                }
+        }
+         
+            
+        }
+
+        
+        @media (max-width: 400px) {
+            
+                
+            .boxcarrito{
+                display: flex;
+                
+                gap: 15px;
+                height: 200px;
+                padding: 20px 20px;
+                background-color: #f9f9f9;
+                border: 1px solid #ddd;
+                align-items: center;
+                width: 100%;
+                justify-content: space-between;
+
+                .box1{
+                    margin: 10px;
+                    flex-direction: row;
+                    display: block;
+                    gap: 20px;
+                    div {
+                        margin-top: 10px;
+                    }
+                    img {
+                        margin-top: 10px;
+                    }
+                    p{
+                        margin-top: 10px;
+                    }
+                }
+        }
+         
+            
+        }
+
+
+
+
+
 
      }
 
-     
 
 
-   }
-
+    
+    
 
    .boxubicacion {
 
