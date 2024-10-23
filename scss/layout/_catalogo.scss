@@ -77,6 +77,8 @@
     }
 }
 
+
+
 #cart-link { /* puntito del carrito. El símbolo # en CSS se utiliza para seleccionar un elemento HTML por su id*/
     position: relative;
     display: inline-block;
@@ -89,7 +91,7 @@
     right: 5px;
     width: 10px;
     height: 10px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 11, 11);
     border-radius: 50%;
     display: none;
 }

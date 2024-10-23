@@ -278,7 +278,7 @@ body {
   right: 5px;
   width: 10px;
   height: 10px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 11, 11);
   border-radius: 50%;
   display: none;
 }
@@ -583,6 +583,41 @@ footer a.contac-link:hover {
 .carrito .boxubicacion input {
   background-color: #f9f9f9;
   border: #f9f9f9;
+}
+.carrito .boxmediodepago {
+  width: 600px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin: auto;
+  align-items: center;
+  padding: 40px;
+}
+.carrito .boxmediodepago .datos {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+}
+.carrito .boxmediodepago .btncomprar {
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  border-radius: 0px;
+  width: 80%; /* Ocupa todo el ancho del contenedor */
+  padding: 10px;
+  margin: auto;
+}
+.carrito .boxmediodepago .btncomprar:hover {
+  background: #555;
+  color: #fff;
+}
+@media (max-width: 700px) {
+  .carrito .boxmediodepago {
+    width: 400px;
+  }
 }
 
 /*VIDEO-----------------------------------------------------------------------------------------*/
