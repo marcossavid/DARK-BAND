@@ -619,6 +619,11 @@ footer a.contac-link:hover {
     width: 400px;
   }
 }
+@media (max-width: 390px) {
+  .carrito .boxmediodepago {
+    width: 300px;
+  }
+}
 
 /*VIDEO-----------------------------------------------------------------------------------------*/
 .video {
