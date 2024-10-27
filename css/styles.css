@@ -163,10 +163,21 @@ body {
   justify-content: center; /* Centra horizontalmente */
   margin: 20px auto; /* Asegura que el carrusel esté centrado en su contenedor */
 }
+#carouselExampleAutoplaying .carousel-inner .carousel-item {
+  position: relative;
+}
 #carouselExampleAutoplaying .carousel-inner .carousel-item img {
   width: 100%; /* Asegura que las imágenes se ajusten al ancho del carrusel */
   height: auto; /* Mantiene la proporción de las imágenes */
   object-fit: cover; /* Recorta las imágenes si es necesario para ajustarse */
+}
+#carouselExampleAutoplaying .carousel-inner .carousel-item .carousel-caption {
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  font-size: 48px;
+  text-decoration: solid;
+  max-width: 80%;
 }
 
 /* BARRA DE CATEGORIAS ---------------------------------------------------------- */
@@ -669,5 +680,30 @@ footer a.contac-link:hover {
 }
 
 /*fin del video---------------------------------------------------------------------------------*/
+/*CARRUSEL---------------------------------------------------------------------------*/
+#carouselExampleAutoplaying {
+  max-width: 80%; /* Define el ancho máximo del carrusel */
+  height: auto; /* Establece una altura fija para el carrusel */
+  display: flex; /* Usa flexbox para centrar */
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  margin: 20px auto; /* Asegura que el carrusel esté centrado en su contenedor */
+}
+#carouselExampleAutoplaying .carousel-inner .carousel-item {
+  position: relative;
+}
+#carouselExampleAutoplaying .carousel-inner .carousel-item img {
+  width: 100%; /* Asegura que las imágenes se ajusten al ancho del carrusel */
+  height: auto; /* Mantiene la proporción de las imágenes */
+  object-fit: cover; /* Recorta las imágenes si es necesario para ajustarse */
+}
+#carouselExampleAutoplaying .carousel-inner .carousel-item .carousel-caption {
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  font-size: 48px;
+  text-decoration: solid;
+  max-width: 80%;
+}
 
 /*# sourceMappingURL=styles.css.map */
