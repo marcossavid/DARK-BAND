@@ -9,3 +9,12 @@
     }
     
 }
+
+@media (max-width: 600px) {
+    .container.mt-5 {
+    padding: 24px;
+    .text-center{
+        text-align: start !important;
+    }
+}
+ }

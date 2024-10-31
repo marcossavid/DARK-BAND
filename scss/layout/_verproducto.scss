@@ -10,55 +10,81 @@
 }
 
 .boxcar {
-    display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
-    width: auto; /* Usa un ancho adecuado para pruebas */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    grid-template-areas: "imagen descripcion";
+    width: auto;
     height: auto;
-    max-width: 900px; /* Limita el ancho máximo */
+    max-width: 900px;
     background: #f9f9f9;
     border: 1px solid #ddd;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    gap: 20px;
+
     img {
-        width: 50%;
+        grid-area: imagen;
+        width: 100%;
         height: auto;
         object-fit: cover;
+      
     }
     .descripcion {
+        grid-area: descripcion;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        padding: 20px;
-        width: 50%;
-        gap: 20px;
+        justify-content: start;
+        gap:20px;
+        
+        
         h2 {
             font-size: 1.5rem;
             margin: 10px 0;
+            
         }
         .color-selector,.size-selector,.quantity-selector {
              margin: 10px 0;
         }
 
-        .comprar-btn {
-            background: #333;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 0px; 
-            text-align: center;
-            text-decoration: none;
-            cursor: pointer;
-            transition: background 0.3s;
-            &:hover {
-                background: #555; /* Fondo más claro al pasar el mouse */
+        .btn-box {
+          
+            width: 100%;
+            height: 100%;
+            margin: 10px 0;
+            padding: 0; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+
+            .comprar-btn {
+                background: #333;
+                color: #fff;
+                padding: 10px 20px;
+                margin: auto;
+                border: none;
+                width: 100%; /* Hace que el botón ocupe el 100% del ancho */
+                border-radius: 0px; 
+                text-align: center;
+                text-decoration: none;
+                cursor: pointer;
+                transition: background 0.3s;
+                &:hover {
+                    background: #555; /* Fondo más claro al pasar el mouse */
+                }
             }
+
         }
+     
       
     }
     
 }
+
+
 /* Consultas de medios para adaptabilidad */
 @media (max-width: 900px) {
+
     .containercar{
         margin-bottom: 60px;
         margin-top: 60px;
@@ -66,26 +92,30 @@
 
     }
     .boxcar {
-        flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
-        padding: 15px;
-        max-width: 100%; /* Asegúrate de que no haya restricción de ancho */
-    }
-
-    .hr {
-        width: 200px;
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        grid-template-areas:
+            "imagen"
+            "descripcion";
+        max-width: 100%;
+        
+        
     }
 
     img {
-        width: 100%; /* La imagen ocupa todo el ancho */
-        margin:auto;
+        width: 100%;
+        margin: auto;
     }
 
     .descripcion {
-        width: 100%; /* La descripción ocupa todo el ancho */
-        margin: auto; /* Asegúrate de que esté centrado */
-        gap: 15px; /* Reduce el espacio entre elementos */
-        align-items: center; /* Centra horizontalmente el contenido */
-        text-align: center; /* Centra el texto */
+        width: 100%;
+        text-align: left;
+        align-items: self-start;
+        padding: 5px;
+        gap:15px;
+        hr{
+            display: none;
+        }
+     
     }
 }
 
@@ -97,26 +127,30 @@
 
     }
     .boxcar {
-        flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
-        padding: 15px;
-        max-width: 100%; /* Asegúrate de que no haya restricción de ancho */
-
+        grid-template-columns: 1fr;
+        padding: 20px;
     }
 
     img {
-        width: 100%; /* La imagen ocupa todo el ancho */
-        margin:auto;
+        width: 100%;
+        margin: auto;
     }
 
     .descripcion {
-        width: 100%; /* La descripción ocupa todo el ancho */
-        margin: auto; /* Asegúrate de que esté centrado */
-        gap: 15px; /* Reduce el espacio entre elementos */
-        align-items: center; /* Centra horizontalmente el contenido */
-        text-align: center; /* Centra el texto */
+        width: 100%;
+        text-align: left;
+        align-items: start;
+        padding: 5px;
+        gap: 15px;
+
+        hr{
+            display: none;
+        }
+
+    
+        
     }
 }
-
 
 
 

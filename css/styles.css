@@ -154,32 +154,6 @@ body {
 }
 
 /* fin banner -- */
-/*CARRUSEL---------------------------------------------------------------------------*/
-#carouselExampleAutoplaying {
-  max-width: 80%; /* Define el ancho máximo del carrusel */
-  height: auto; /* Establece una altura fija para el carrusel */
-  display: flex; /* Usa flexbox para centrar */
-  align-items: center; /* Centra verticalmente */
-  justify-content: center; /* Centra horizontalmente */
-  margin: 20px auto; /* Asegura que el carrusel esté centrado en su contenedor */
-}
-#carouselExampleAutoplaying .carousel-inner .carousel-item {
-  position: relative;
-}
-#carouselExampleAutoplaying .carousel-inner .carousel-item img {
-  width: 100%; /* Asegura que las imágenes se ajusten al ancho del carrusel */
-  height: auto; /* Mantiene la proporción de las imágenes */
-  object-fit: cover; /* Recorta las imágenes si es necesario para ajustarse */
-}
-#carouselExampleAutoplaying .carousel-inner .carousel-item .carousel-caption {
-  align-items: center;
-  color: #fff;
-  text-align: center;
-  font-size: 48px;
-  text-decoration: solid;
-  max-width: 80%;
-}
-
 /* BARRA DE CATEGORIAS ---------------------------------------------------------- */
 .navcategorias {
   display: flex;
@@ -306,6 +280,14 @@ body {
   border-color: #555 !important;
 }
 
+@media (max-width: 600px) {
+  .container.mt-5 {
+    padding: 24px;
+  }
+  .container.mt-5 .text-center {
+    text-align: start !important;
+  }
+}
 /* Estilos del footer ---------------------------------------------------------------------*/
 footer {
   background: #333;
@@ -338,27 +320,29 @@ footer a.contac-link:hover {
 }
 
 .boxcar {
-  display: flex;
-  flex-wrap: wrap; /* Permite que los elementos se envuelvan */
-  width: auto; /* Usa un ancho adecuado para pruebas */
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+  grid-template-areas: "imagen descripcion";
+  width: auto;
   height: auto;
-  max-width: 900px; /* Limita el ancho máximo */
+  max-width: 900px;
   background: #f9f9f9;
   border: 1px solid #ddd;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  gap: 20px;
 }
 .boxcar img {
-  width: 50%;
+  grid-area: imagen;
+  width: 100%;
   height: auto;
   object-fit: cover;
 }
 .boxcar .descripcion {
+  grid-area: descripcion;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 20px;
-  width: 50%;
+  justify-content: start;
   gap: 20px;
 }
 .boxcar .descripcion h2 {
@@ -368,18 +352,29 @@ footer a.contac-link:hover {
 .boxcar .descripcion .color-selector, .boxcar .descripcion .size-selector, .boxcar .descripcion .quantity-selector {
   margin: 10px 0;
 }
-.boxcar .descripcion .comprar-btn {
+.boxcar .descripcion .btn-box {
+  width: 100%;
+  height: 100%;
+  margin: 10px 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.boxcar .descripcion .btn-box .comprar-btn {
   background: #333;
   color: #fff;
   padding: 10px 20px;
+  margin: auto;
   border: none;
+  width: 100%; /* Hace que el botón ocupe el 100% del ancho */
   border-radius: 0px;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
   transition: background 0.3s;
 }
-.boxcar .descripcion .comprar-btn:hover {
+.boxcar .descripcion .btn-box .comprar-btn:hover {
   background: #555; /* Fondo más claro al pasar el mouse */
 }
 
@@ -391,23 +386,23 @@ footer a.contac-link:hover {
     height: auto;
   }
   .boxcar {
-    flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
-    padding: 15px;
-    max-width: 100%; /* Asegúrate de que no haya restricción de ancho */
-  }
-  .hr {
-    width: 200px;
+    grid-template-columns: 1fr; /* Cambia a una sola columna */
+    grid-template-areas: "imagen" "descripcion";
+    max-width: 100%;
   }
   img {
-    width: 100%; /* La imagen ocupa todo el ancho */
+    width: 100%;
     margin: auto;
   }
   .descripcion {
-    width: 100%; /* La descripción ocupa todo el ancho */
-    margin: auto; /* Asegúrate de que esté centrado */
-    gap: 15px; /* Reduce el espacio entre elementos */
-    align-items: center; /* Centra horizontalmente el contenido */
-    text-align: center; /* Centra el texto */
+    width: 100%;
+    text-align: left;
+    align-items: self-start;
+    padding: 5px;
+    gap: 15px;
+  }
+  .descripcion hr {
+    display: none;
   }
 }
 @media (max-width: 600px) {
@@ -417,20 +412,22 @@ footer a.contac-link:hover {
     height: auto;
   }
   .boxcar {
-    flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
-    padding: 15px;
-    max-width: 100%; /* Asegúrate de que no haya restricción de ancho */
+    grid-template-columns: 1fr;
+    padding: 20px;
   }
   img {
-    width: 100%; /* La imagen ocupa todo el ancho */
+    width: 100%;
     margin: auto;
   }
   .descripcion {
-    width: 100%; /* La descripción ocupa todo el ancho */
-    margin: auto; /* Asegúrate de que esté centrado */
-    gap: 15px; /* Reduce el espacio entre elementos */
-    align-items: center; /* Centra horizontalmente el contenido */
-    text-align: center; /* Centra el texto */
+    width: 100%;
+    text-align: left;
+    align-items: start;
+    padding: 5px;
+    gap: 15px;
+  }
+  .descripcion hr {
+    display: none;
   }
 }
 /* Estilo para la ventana modal */
