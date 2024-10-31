@@ -493,6 +493,7 @@ footer a.contac-link:hover {
 }
 .carrito .productoscarrito .boxcarrito {
   display: flex;
+  margin: 40px auto;
   height: 80px;
   padding: 20px;
   background-color: #f9f9f9;
@@ -583,10 +584,10 @@ footer a.contac-link:hover {
 }
 .carrito .boxubicacion {
   display: flex;
+  margin: 20px auto;
   flex-direction: row;
   height: 80px;
   padding: 20px;
-  margin: 15px auto;
 }
 .carrito .boxubicacion input {
   background-color: #f9f9f9;
@@ -597,7 +598,7 @@ footer a.contac-link:hover {
   width: 600px;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
-  margin: auto;
+  margin: 40px auto;
   align-items: center;
   padding: 40px;
 }

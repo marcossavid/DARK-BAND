@@ -16,6 +16,7 @@
 
      .boxcarrito{
         display: flex;
+        margin: 40px auto;
         height: 80px;
         padding: 20px;
         background-color: #f9f9f9;
@@ -158,10 +159,11 @@
    .boxubicacion {
 
     display: flex;
+    margin: 20px auto;
     flex-direction: row;
     height: 80px;
     padding: 20px;
-    margin: 15px auto;
+    
     input {
         background-color: #f9f9f9;
         border: #f9f9f9;
@@ -179,7 +181,7 @@
     
     background-color: #f9f9f9;
     border: 1px solid #ddd;
-    margin: auto;
+    margin: 40px auto;
     align-items: center;
     padding: 40px;
 
